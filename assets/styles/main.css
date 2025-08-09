@@ -21,4 +21,20 @@ Author URI: Version: 1.3
 @import url('./themes/dark.css');
 
 
+h1 {
+    color: var(--color-primary);
 
+}
+p{
+    color:var(--text-color);
+}
+
+.card-title {
+    background: var(--gradient-primary);
+    color: var(--text-color);
+}
+
+.card-button {
+    background-color: var(--color-primary);
+    color: var(--text-color);
+}
