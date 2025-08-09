@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
-    background: var(--gradient-primary);
+    background: var(--color-primary);
     color:var(--color-text);
     position: fixed;
     bottom: 0;

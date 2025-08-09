@@ -10,7 +10,7 @@ img {
 }
 
 .nav-background {
-    background: var(--gradient-primary);
+    background: var(--color-primary);
     color: var(--text-color);
 }
 
