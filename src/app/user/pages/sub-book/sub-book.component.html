@@ -1,0 +1,61 @@
+<app-hero-banner [title]="parentTitle" [subtitle]="'Explore, read, and download your favorite books'"></app-hero-banner>
+
+<div class="container">
+  <!-- Search Box -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="search-box my-3 search-container">
+        <input type="text" class="form-control" placeholder="Search sub books..." [(ngModel)]="searchQuery" />
+        <button class="search-btn" id="searchBtn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div *ngIf="loading" class="text-center my-5">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+
+  <!-- Book Grid -->
+  <div class="row" *ngIf="!loading && filteredBooks.length > 0">
+    <div
+      *ngFor="let item of filteredBooks | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+      class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2">
+      <div class="card book-card" tabindex="0">
+        <div class="card-img-wrapper">
+          <img [src]="item.img" [alt]="item.title || 'Book Image'" loading="lazy" class="card-img-top" />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-truncate" [attr.title]="item.title">
+            {{ item.title }}
+          </h5>
+          <div class="d-flex justify-content-between mt-3">
+            <button class="btn btn-outline-dark btn-sm" *ngIf="!item.hasChildren" (click)="navigateToBook(item)">
+              Read
+            </button>
+            <button class="btn btn-success btn-sm" *ngIf="!item.hasChildren && item.pdfPath"
+              (click)="downloadPDF(item.pdfPath, item.title)">
+              <i class="fas fa-file-pdf fa-fw"></i> Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- No Results -->
+  <div *ngIf="!loading && filteredBooks.length === 0" class="text-center my-5">
+    <p>No sub-books match your search.</p>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination-wrapper mt-4 d-flex justify-content-center">
+    <pagination-controls id="content-pagination" (pageChange)="currentPage = $event" class="pagination"
+      previousLabel="Previous" nextLabel="Next">
+    </pagination-controls>
+  </div>
+</div>
+
+<app-footer></app-footer>

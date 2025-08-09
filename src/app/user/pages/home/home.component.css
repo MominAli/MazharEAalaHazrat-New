@@ -1,0 +1,68 @@
+.feedback-donation-section {
+    margin-top: 20px;
+    background-color:var(--bg-color);
+    border-radius: 15px;
+}
+
+.feedback, .donation {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.feedback h6, .donation h6 {
+    font-size: 20px;
+    font-weight: 900;
+    color:var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.feedback p, .donation p {
+    font-size: 16px;
+    line-height: 22px;
+    color:var(--text-color);
+}
+
+.feed-anch, .donate-anch {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.feedback-btn, .donation-btn {
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.card-bg { background: linear-gradient(to right, #e3f2fd, #f1f8e9); }
+
+.btn-them {
+    background-color: var(--button-bg);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+        padding-bottom: 6px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 767px) {
+    .feedback, .donation {
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback-btn, .donation-btn {
+        font-size: 14px;
+    }
+}
+
+

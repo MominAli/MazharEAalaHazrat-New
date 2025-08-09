@@ -1,0 +1,226 @@
+<app-loader [loading]="loading"></app-loader>
+<div *ngIf="!loading">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 pb-5">
+                    <ngx-extended-pdf-viewer [src]="pdfUrl" [height]="isMobile ? '80vh' : '190vh'" [textLayer]="true"
+                        [showHandToolButton]="false" [showDownloadButton]="true" [showZoomButtons]="false"
+                        [mobileFriendlyZoom]="'true'" [zoom]="'auto'" [showFindButton]="false"
+                        [showSidebarButton]="false" [showSecondaryToolbarButton]="false">
+                    </ngx-extended-pdf-viewer>
+                </div>
+
+                <div class="col-lg-4 col-md-12 d-none d-lg-block">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-footer">
+                                <div class="section-header">
+                                    Reading Options
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-panel-bg px-2">
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-para" class="form-select select-box rounded-0"
+                                    aria-label="Default select example" (change)="onParaChange($event)"
+                                    [(ngModel)]="selectedPara">
+                                    <option value="" disabled>Select Para</option>
+                                    <option *ngFor="let para of ddlPara" [value]="para.value">{{ para.name }}</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Para</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-panel-bg px-2">
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-surah" class="form-select select-box rounded-0"
+                                    aria-label="Default select example" (change)="onSurahChange($event)"
+                                    [(ngModel)]="selectedSurah">
+                                    <option value="" disabled>Select Surah</option>
+                                    <option *ngFor="let surah of ddlSurah" [value]="surah.value">{{ surah.name }}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Surah</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12 position-relative">
+                            <div class="section-footer">
+                                <div class="section-header full-width">
+                                    Listen and Download Options
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-panel-bg p-2 mb-1">
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-qari" class="form-select select-box rounded-0"
+                                    aria-label="Default select example">
+                                    <option disabled>Select Qari</option>
+                                    <option *ngFor="let qari of ddlQari" [value]="qari.value">{{ qari.name }}</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Qari</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 pe-1">
+                            <audio controls class="w-100">
+                                <source [src]="audioUrl" type="audio/ogg">
+                                <source [src]="audioUrl" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 pe-1">
+                            <div class="d-flex justify-content-center">
+                                <button class="action-button me-5" [disabled]="!pdfUrl"
+                                    (click)="download('pdf')">PDF</button>
+                                <button class="action-button" [disabled]="!audioUrl"
+                                    (click)="download('audio')">Audio</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Modal Templates -->
+    <div class="modal fade" id="downloadOption" tabindex="-1" aria-labelledby="downloadOptionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Download</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-6 text-center">
+                            <a [href]="pdfUrl" download class="action-button me-5 no-decoration">PDF</a>
+
+                        </div>
+                        <div class="col-md-6 col-6 text-center">
+                            <a [href]="audioUrl" download class="action-button no-decoration">Audio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2: Listen and Download -->
+    <div class="modal fade" id="listenOption" tabindex="-1" aria-labelledby="listenLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="listenLabel">Select and Listen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="side-panel-bg p-2 mb-1">
+
+
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-para" class="form-select select-box rounded-0"
+                                    aria-label="Default select example" (change)="onParaChange($event)"
+                                    [(ngModel)]="selectedPara">
+                                    <option value="" disabled>Select Para</option>
+                                    <option *ngFor="let para of ddlPara" [value]="para.value">{{ para.name }}</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Para</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-surah" class="form-select select-box rounded-0"
+                                    aria-label="Default select example" (change)="onSurahChange($event)"
+                                    [(ngModel)]="selectedSurah">
+                                    <option value="" disabled>Select Surah</option>
+                                    <option *ngFor="let surah of ddlSurah" [value]="surah.value">{{ surah.name }}
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Surah</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9 pe-1">
+                                <select name="quran-qari" class="form-select select-box rounded-0"
+                                    aria-label="Default select example">
+                                    <option disabled selected>Select Qari</option>
+                                    <option *ngFor="let qari of ddlQari" [value]="qari.value">{{ qari.name }}</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label class="label-style">Qari</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pe-1">
+                            <audio controls class="w-100">
+                                <ng-container *ngIf="audioUrl">
+                                    <source [attr.src]="audioUrl" type="audio/ogg">
+                                    <source [attr.src]="audioUrl" type="audio/mpeg">
+                                </ng-container>
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Reading Option -->
+
+</div>
+
+<!-- Modal Trigger Buttons -->
+
+
+<div class=" d-lg-none d-xl-none position-fixed bottom-0 start-0 px-1 bg-white py-1">
+    <div class="bottom-btn d-flex justify-content-center align-items-center gap-3 py-3 bg-light border-top">
+        <div class="text-center">
+            <a class="btn btn-outline-primary px-4" data-bs-toggle="modal" data-bs-target="#downloadOption" href="#">
+                Download
+            </a>
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn-outline-success px-4" data-bs-toggle="modal" data-bs-target="#listenOption" href="#">
+                Select & Listen
+            </a>
+        </div>
+    </div>
+
+
+</div>
+<!-- <app-footer></app-footer> -->

@@ -1,0 +1,579 @@
+{
+    "categories": [
+        {
+            "title": "Dars-E-Quran-Shareef ",
+            "label": "Dars-E-Quran-Shareef"
+        },
+        {
+            "title": "Naate Paak",
+            "label": "Naate Paak"
+        },
+        {
+            "title": "Manqabat Sharif",
+            "label": "Manqabat Sharif"
+        },
+        {
+            "title": "Rabi-ul-Awwal Sharif",
+            "label": "Rabi-ul-Awwal Sharif"
+        },
+        {
+            "title": "Rabi-us-Saani Sharif",
+            "label": "Rabi-us-Saani Sharif"
+        },
+        {
+            "title": "Moharram-ul-Haram",
+            "label": "Moharram-ul-Haram"
+        },
+        {
+            "title": "Huzur Sher-e-Hindustan",
+            "label": "Huzur Sher-e-Hindustan"
+        },
+        {
+            "title": "Malang E Sarkar Maula Ali",
+            "label": "Malang E Sarkar Maula Ali"
+        },
+        {
+            "title": "Hussaini Zal Zala",
+            "label": "Hussaini Zal Zala"
+        },
+        {
+            "title": "Huzur Shamail-e-Millat",
+            "label": "Huzur Shamail-e-Millat"
+        },
+        {
+            "title": "Hazrat Muftiye Azam Pilibhit",
+            "label": "Hazrat Muftiye Azam Pilibhit"
+        },
+        {
+            "title": "Huzur Mohaqqiq-e-Asr",
+            "label": "Huzur Mohaqqiq-e-Asr"
+        },
+        {
+            "title": "Humshabeeh-e-Nasire Millat",
+            "label": "Humshabeeh-e-Nasire Millat"
+        }
+    ],
+    "tabContent": {
+        "Naate Paak": [
+            {
+                "name": "Faaslon ko taqalluf hai humse agar",
+                "url": "https://www.youtube.com/embed/GZkbK1NXuas"
+            },
+            {
+                "name": "Huzoor Aisa Koi Intezam Hojaye",
+                "url": "https://www.youtube.com/embed/yIOo1gRbb-U"
+            },
+            {
+                "name": "Maula Ya Salli Wa sallim- Qaseeda Burda Shareef",
+                "url": "https://www.youtube.com/embed/y4LerDDGoNM"
+            },
+            {
+                "name": "Sabse Aula wa Aala hamara Nabi",
+                "url": "https://www.youtube.com/embed/ntOvZoTFTRY"
+            },
+            {
+                "name": "Koi Duniya e Ata mai nahi Hamta Tera",
+                "url": "https://www.youtube.com/embed/i8YyekWrbhU"
+            },
+            {
+                "name": "Dar Bada ho to sawali bhi khada sajta hai",
+                "url": "https://www.youtube.com/embed/-SZajol3vpI"
+            },
+            {
+                "name": "Koi Duniya e Ata mai nahi Hamta Tera",
+                "url": "https://www.youtube.com/embed/ipaKE4bcQ4Y"
+            },
+            {
+                "name": "Lutf Unka aam Ho hi jayega",
+                "url": "https://www.youtube.com/embed/bzFPkYc6AzM"
+            },
+            {
+                "name": "Koi Gul baqi rahega na Chaman Reh jayega",
+                "url": "https://www.youtube.com/embed/imgpBLb6g0E"
+            },
+            {
+                "name": "Subho taiba mai huwi Batta Hai baada Noor ka",
+                "url": "https://www.youtube.com/embed/FwP6SfqdVlM"
+            },
+            {
+                "name": "Tere Qadmo mai aana mera kaam tha",
+                "url": "https://www.youtube.com/embed/BaPTR0SSXZo"
+            },
+            {
+                "name": "Nadroon ko ilm ke moti Aaqa ne Ata kiye",
+                "url": "https://www.youtube.com/embed/Bly17hO2O6A"
+            },
+            {
+                "name": "Muhammad Hamare Badi shaan wale (Sallallahu Alaihi wasallam)",
+                "url": "https://www.youtube.com/embed/XHvFELfqFkw"
+            },
+            {
+                "name": "Aankho ka tara Naame Muhammad (Sallallahu Alaihi wasallam)",
+                "url": "https://www.youtube.com/embed/jIWQnFVPDLA"
+            },
+            {
+                "name": "Chalo Dekhlen wo haqeeqaten jinhe dekhna bhi misaal hai",
+                "url": "https://www.youtube.com/embed/aTcRF2gHf-Q"
+            },
+            {
+                "name": "Peshe Haq Muzda Shafa'at ka sunate jayenge",
+                "url": "https://www.youtube.com/embed/cBmWTjcxWBk"
+            },
+            {
+                "name": "Zameeno zaman tumhare liye",
+                "url": "https://www.youtube.com/embed/CVSJeZf9MG8"
+            },
+            {
+                "name": "Zeenate Yaseen Tui",
+                "url": "https://www.youtube.com/embed/Pz3MR8Wqblw"
+            }
+        ],
+        "Manqabat Sharif": [
+            {
+                "name": "Shere Sunnat Hain",
+                "url": "https://www.youtube.com/embed/kSOpCVJ-uxM"
+            },
+            {
+                "name": "Shere Beshae Ahlesunnat Maulana Hashmat Ali",
+                "url": "https://www.youtube.com/embed/OPu8PjYYW7Y"
+            },
+            {
+                "name": "Hashmati Rang mai rang jao mere yaar",
+                "url": "https://www.youtube.com/embed/A8sS_qxCWJg"
+            },
+            {
+                "name": "Mazhare Aalahazrat Chale aaiye",
+                "url": "https://www.youtube.com/embed/nnFJwA6vwQg"
+            },
+            {
+                "name": "Shere Sunnat rehnuma Hashmat Ali Khan Qadri",
+                "url": "https://www.youtube.com/embed/w-jpQaMBWmM"
+            },
+            {
+                "name": "Jo tujhe bhool gaya mazhare Aalahazrat",
+                "url": "https://www.youtube.com/embed/mbP0rKor95A"
+            },
+            {
+                "name": "Waah kya ilm Hai hazrate Aala Tera",
+                "url": "https://www.youtube.com/embed/B5ouofBAsJc"
+            },
+            {
+                "name": "Tere Jalwo Ki tabani Moinuddin Ajmeri",
+                "url": "https://www.youtube.com/embed/BiR4R6t1Tm4"
+            },
+            {
+                "name": "Hazaro mai 72 Tan the tasleem o raza wale",
+                "url": "https://www.youtube.com/embed/t2GPjYft0q4"
+            },
+            {
+                "name": "Baghe jannat ke hain behre madhkhwane Ahlebait",
+                "url": "https://www.youtube.com/embed/EDyA9Op51uo"
+            },
+            {
+                "name": "Karte hain jinno bashar har waqt charcha Ghous ka",
+                "url": "https://www.youtube.com/embed/3vCZ6Zz8D00"
+            }
+        ],
+        "Malang E Sarkar Maula Ali": [
+            {
+                "name": "Dharti Hindustan ki aur Naara Pakistan ka",
+                "url": "https://www.youtube.com/embed/kAxgI3iaxIc"
+            },
+            {
+                "name": "Na Kutta Na Billi Aao Nizamuddin Ki Dilli",
+                "url": "https://www.youtube.com/embed/n4H7YO38ty0"
+            },
+            {
+                "name": "Exposed Aatankwadi Zakir Naik",
+                "url": "https://www.youtube.com/embed/thBNFbjKjIk"
+            },
+            {
+                "name": "Sayyed Kon?",
+                "url": "https://www.youtube.com/embed/JfzFLMMJ0Bs"
+            },
+            {
+                "name": "Taziya Shareef Jaiz Hai Kya?",
+                "url": "https://www.youtube.com/embed/QfHFxfsV1vI"
+            },
+            {
+                "name": "Hame Kaafi Hai Sayyed Apna Naara Ya Rasool Allah",
+                "url": "https://www.youtube.com/embed/m7JU7Lk0oV0"
+            },
+            {
+                "name": "Bareilly Na Tha Ali Tha",
+                "url": "https://www.youtube.com/embed/-HAiIseVMeQ"
+            },
+            {
+                "name": "Pakistaniyo Kaan Khol Kar Sun lo",
+                "url": "https://www.youtube.com/embed/7Halt8C0y8E"
+            },
+            {
+                "name": "Urs e Chahellum Sarkar Masoom e Millat",
+                "url": "https://www.youtube.com/embed/558vt96ENKg"
+            },
+            {
+                "name": "Muharram Mai Dhol Bajana Kaisa?",
+                "url": "https://www.youtube.com/embed/TJJmiWs-lkI"
+            },
+            {
+                "name": "Tajdaare Baghdad Conference",
+                "url": "https://www.youtube.com/embed/g3U8k1G3RR8"
+            },
+            {
+                "name": "Jhoote Bareilvi Mullai ka Operation (Urs e Razavi 2024)",
+                "url": "https://www.youtube.com/embed/IFEsA6YxXaM"
+            },
+            {
+                "name": "Jashne Ghausul Wara Conference Aghiya kunda",
+                "url": "https://www.youtube.com/embed/uRsaJyyWZNY"
+            },
+            {
+                "name": "Jashne wiladat e Maula e Kainaat",
+                "url": "https://www.youtube.com/embed/10RAZyMTo9A"
+            }
+        ],
+        "Hussaini Zal Zala": [
+            {
+                "name": "Husaini Zalzala Khandwa M.P 2024",
+                "url": "https://www.youtube.com/embed/3BDgBiSA5KQ"
+            },
+            {
+                "name": "Husaini Zalzala Khandwa M.P 2024",
+                "url": "https://www.youtube.com/embed/70Mt4qA2jXs"
+            },
+            {
+                "name": "Husaini Zalzala Khandwa M.P 2024",
+                "url": "https://www.youtube.com/embed/kbWjtwEFK0A"
+            },
+            {
+                "name": "Husaini Zalzala Khandwa M.P 2024",
+                "url": "https://www.youtube.com/embed/ZK6sgS-_ZHQ"
+            }
+        ],
+        "Rabi-us-Saani Sharif": [
+            {
+                "name": "Jashne Ghausul wara conference Aghiya Kunda 2022",
+                "url": "https://www.youtube.com/embed/EMBmB4_Bta0?si=74mL2Md-TRmHY41g"
+            },
+            {
+                "name": "Juloose Gausiya Bayan 2023 Sahdullah Nagar",
+                "url": "https://www.youtube.com/embed/BSlW_iPmDrw"
+            },
+            {
+                "name": "Jashne Ghausul wara",
+                "url": "https://www.youtube.com/embed/tPLCrFquXuU"
+            },
+            {
+                "name": "Jashn E Gaushul Wara, Maseehabad 2024",
+                "url": "https://www.youtube.com/embed/LguVG85R7og"
+            },
+            {
+                "name": "Jashn E Gaushul Wara, Sahdullah Nagar 2024",
+                "url": "https://www.youtube.com/embed/cZV7nDV9xU4?si=nZRGmOM6Op7miCxR"
+            },
+            {
+                "name": "Jashn E Gaushul Wara",
+                "url": "https://www.youtube.com/embed/lKIMbb58jP4"
+            },
+            {
+                "name": "Jashn e Ghous e Azam Radiallahu anhu",
+                "url": "https://www.youtube.com/embed/cvcnob5-zzQ"
+            },
+            {
+                "name": "Jashn E Gous Ul Wara Harda M.P 2017",
+                "url": "https://www.youtube.com/embed/m84p1mlgguM"
+            }
+        ],
+        "Huzur Sher-e-Hindustan": [
+            {
+                "name": "Radde Sulahkulliayat",
+                "url": "https://www.youtube.com/embed/MyfiBBAPeUY"
+            },
+            {
+                "name": "JASHNE GAUSE AAZAM CONFRENCE In Narayan Nagar 2016",
+                "url": "https://www.youtube.com/embed/j6F-kGL1TuY"
+            },
+            {
+                "name": "Taqreer at Aastana Sarkar Sayyed jamaluddin Roshan Qadri M.P 2023",
+                "url": "https://www.youtube.com/embed/l1ABfHFMefg"
+            },
+            {
+                "name": "Sunni Ka Salaam",
+                "url": "https://www.youtube.com/embed/6UcP3m2J2hg"
+            },
+            {
+                "name": "Radde Wahabiyat",
+                "url": "https://www.youtube.com/embed/pdfyoQqYfEs"
+            },
+            {
+                "name": "Radde Wahabiyat",
+                "url": "https://www.youtube.com/embed/RMWraP0sEyo"
+            },
+            {
+                "name": "Mehfil e Milad Shareef Powai Mumbai",
+                "url": "https://www.youtube.com/embed/_i4YLel0aIc"
+            },
+            {
+                "name": "SHAHID-E-AAZAM Radi Allahu Ta'ala Anhu) CONFERENCE Vadodra Gujarat 2016",
+                "url": "https://www.youtube.com/embed/iZzlCSGuaG8"
+            },
+            {
+                "name": "All India Mazhare Aala Hazrat Conference (Gulshanabaad) Sanawad, M.P.",
+                "url": "https://www.youtube.com/embed/cATqGc5G-rY"
+            },
+            {
+                "name": "Radde Wahabiyat at Nadiad Part 1",
+                "url": "https://www.youtube.com/embed/0uRfd5wuleY"
+            },
+            {
+                "name": "Radde Wahabiyat at Nadiad Part 2",
+                "url": "https://www.youtube.com/embed/ls7-ilK0cUk"
+            },
+            {
+                "name": "Jashne Eid Miladunnabi Bisalpur",
+                "url": "https://www.youtube.com/embed/FXISo3xjbA0"
+            },
+            {
+                "name": "Radde Wahabiyat at Banaras",
+                "url": "https://www.youtube.com/embed/z_g2_pEVm6Q"
+            },
+            {
+                "name": "Muhabbat Kya hai?",
+                "url": "https://www.youtube.com/embed/IB0BMHRy88Y"
+            },
+            {
+                "name": "Radde Wahabiyat ar Jogeshwari East",
+                "url": "https://www.youtube.com/embed/vTYs1DsTwt0"
+            },
+            {
+                "name": "Mehfil E Milad Sharif In Sheetal, Kurla 2016",
+                "url": "https://www.youtube.com/embed/vHYEfpkdcfk"
+            },
+            {
+                "name": "SHAHID-E-AAZAM Radi Allahu Ta'ala Anhu) CONFERENCE MIDC Andheri 2016",
+                "url": "https://www.youtube.com/embed/sSMyUYbmzIM"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 1 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/LBrTUl1oQTg"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 2 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/RCTVHja9pLY"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 3 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/xmtKRb4x8fA"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 4 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/odyFqPdo79s"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 5 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/0y4bD5BK-5o"
+            },
+            {
+                "name": "Radde Wahabiyat o Sulahkulliyat Part 6 Nizamabad Telangana",
+                "url": "https://www.youtube.com/embed/-EHpkjK-Uug"
+            },
+            {
+                "name": "Deoband Ke Sexy Mulla 2014",
+                "url": "https://www.youtube.com/embed/poMg4-cD8Ak"
+            }
+        ],
+        "Dars-E-Quran-Shareef": [
+            {
+                "name": "1 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/p4h2kNvZQLw"
+            },
+            {
+                "name": "2 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/ijLzgssVO2M"
+            },
+            {
+                "name": "3 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/QZ7n4mM3GbI"
+            },
+            {
+                "name": "4 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/-6tliwdU_BI"
+            },
+            {
+                "name": "5 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/sygJN2lgf_c"
+            },
+            {
+                "name": "6 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/fjfPaWFTiZY"
+            },
+            {
+                "name": "7 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/hN6EvW6PBZE"
+            },
+            {
+                "name": "8 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/ShSKm7I_2CE"
+            },
+            {
+                "name": "9 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/6jXZUPQeF8s"
+            },
+            {
+                "name": "10 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/Vqk8n0iBXk4"
+            },
+            {
+                "name": "11 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/DnqSdSeURX8"
+            },
+            {
+                "name": "12 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/1lQaIMlcrb8"
+            },
+            {
+                "name": "13 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/0nwOh_Yp_I8"
+            },
+            {
+                "name": "14 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/9nSTvgBk7ds"
+            },
+            {
+                "name": "15 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/5d2lH-2ex5g"
+            },
+            {
+                "name": "16 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/VkFDQIN8MKM"
+            },
+            {
+                "name": "17 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/gkZ4gBJQwWE"
+            },
+            {
+                "name": "18 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/TipLBdjO3Ok"
+            },
+            {
+                "name": "19 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/YhyeyKoYwvw"
+            },
+            {
+                "name": "20 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/pb7K9qtedtY"
+            },
+            {
+                "name": "21 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/y6JzSpB0aIQ"
+            },
+            {
+                "name": "22 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/KnmW_Orixoo"
+            },
+            {
+                "name": "23 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/qWN-3wBiLbw"
+            },
+            {
+                "name": "24 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/a4IzmDBlNEA"
+            },
+            {
+                "name": "25 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/x26Rro8CckE"
+            },
+            {
+                "name": "26 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/dlTO9-u6VzQ"
+            },
+            {
+                "name": "27 Ramzanul Mubarak 2023",
+                "url": "https://www.youtube.com/embed/dfgl1Q4K_xA"
+            }
+        ],
+        "Moharram-ul-Haram": [
+            {
+                "name": "Day 3",
+                "url": "https://www.youtube.com/embed/NvFnakAdfwI?si=9GSG0rGx62i_l14n"
+            },
+            {
+                "name": "Day 4",
+                "url": "https://www.youtube.com/embed/Jh-iYz64OWs?si=qx02dHBmdTSoctYt"
+            },
+            {
+                "name": "Day 5",
+                "url": "https://www.youtube.com/embed/mSeOcJT_BJM?si=RMHnGcfU1iTVyjW9"
+            },
+            {
+                "name": "Day 6",
+                "url": "https://www.youtube.com/embed/Wjj4wxtKwiw?si=mm2GOWOb0tZvKCOx"
+            },
+            {
+                "name": "Day 7",
+                "url": "https://www.youtube.com/embed/N5HutOuW89E?si=GyE3eRfnySw7V3Gs"
+            },
+            {
+                "name": "Day 8",
+                "url": "https://www.youtube.com/embed/1Y0NlRD88fc?si=icSH3n6YoC-zIGME"
+            },
+            {
+                "name": "Day 9",
+                "url": "https://www.youtube.com/embed/h7mvCoRLMFI?si=8De0m_VedKDCYohR"
+            },
+            {
+                "name": "Day 10",
+                "url": "https://www.youtube.com/embed/-KvXfPmWn0k?si=9X8u15eIxjY7xPvz"
+            },
+            {
+                "name": "Day 9 Hashmat Nagar",
+                "url": "https://www.youtube.com/embed/UC_Lx1PBy_4"
+            },
+            {
+                "name": "Shahadat Hazrat Abbas Alamdaar",
+                "url": "https://www.youtube.com/embed/Hkp6pjdZGbc"
+            },
+            {
+                "name": "Day 7 to Day 10",
+                "url": "https://www.youtube.com/embed/P25jDDpz2BA"
+            },
+            {
+                "name": "Taziya Shareef banana Kaisa hai?",
+                "url": "https://www.youtube.com/embed/g0wIqWYisGQ"
+            },
+            {
+                "name": "Special Bayan 2023",
+                "url": "https://www.youtube.com/embed/4rMjmkQVoAI"
+            },
+            {
+                "name": "Taziyadari Ko haram kehne walo ka Radd",
+                "url": "https://www.youtube.com/embed/6HC8kc4f9ls"
+            },
+            {
+                "name": "Taziya Shareef banana Kaisa hai?",
+                "url": "https://www.youtube.com/embed/9pcK_FAafzo"
+            },
+            {
+                "name": "Hussain RadiAllahu Anhu Karbala Mai",
+                "url": "https://www.youtube.com/embed/th7xZwbJmPo"
+            },
+            {
+                "name": "10 Muharram Ki Fazeelat",
+                "url": "https://www.youtube.com/embed/r33c1TZsF0w"
+            },
+            {
+                "name": "Day 7 Bayaan 2021",
+                "url": "https://www.youtube.com/embed/Q13CzDl9Tcc"
+            },
+            {
+                "name": "Day 9 Bayaan 2021",
+                "url": "https://www.youtube.com/embed/P6CgCApH60A"
+            }
+        ],
+        "Rabi-ul-Awwal Sharif": [],
+        "Huzur Shamail-e-Millat": [],
+        "Hazrat Muftiye Azam Pilibhit": [],
+        "Huzur Mohaqqiq-e-Asr": [],
+        "Humshabeeh-e-Nasire Millat": []
+    }
+}

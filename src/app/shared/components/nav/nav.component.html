@@ -1,0 +1,101 @@
+<div class="container-fluid bg-nav navbarTop card-bg" id="mainNavbar">
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-3 border-bottom-0">
+            <a href="index.html">
+                <!-- <h1 class="mb-0"><span class="text-primary"> ابوالفتح</span> </h1> -->
+                <!-- مظہر اعلیٰ حضرت -->
+                <!-- ابوالفتح -->
+                <img src="assets/img/logo/logo.png" style="width:120px;" class="img-fluid border-0" alt="">
+            </a>
+
+            <!-- Theme Toggle Button -->
+            <button class="btn btn-outline-secondary ms-2 d-flex border align-items-center position-absolute" (click)="toggleTheme()"
+                aria-label="Toggle theme">
+                <i class="bi" [ngClass]="currentTheme === 'dark' ? 'bi-moon-fill' : 'bi-sun-fill'"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+                data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" [class.show]="!isNavbarCollapsed" id="navbarCollapse">
+                <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        @if (accountService.currentUser()) {
+                        <li class="nav-item">
+                            <a routerLink="/members" routerLinkActive="active" class="nav-link">Memeber</a>
+                        </li>
+                        <li *appHasRole="['Admin', 'Moderator']" class="nav-item">
+                            <a routerLink="/admin" routerLinkActive="active" class="nav-link">Admin</a>
+                        </li>
+                        }
+                    </ul>
+
+                    <a routerLink="/home" routerLinkActive="active" class="nav-item nav-link active" style="font-family: 'Amiri', 'Scheherazade', 'Noto Naskh Arabic', sans-serif;
+" (click)="closeNavbar()">Home</a>
+                    <a routerLink="/book" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Books</a>
+                    <a routerLink="/media" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Media </a>
+                    <a routerLink="/quran" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Quran</a>
+                    <a routerLink="/activity" routerLinkActive="active" class="nav-link"
+                        (click)="closeNavbar()">Activity</a>
+                    <a routerLink="/biograhpy" routerLinkActive="active" class="nav-link"
+                        (click)="closeNavbar()">Biograhpy</a>
+
+                    <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">Contact
+                        Us</a>
+                    <a routerLink="/aboutus" routerLinkActive="active" class="nav-link" (click)="closeNavbar()">About
+                        Us</a>
+                </div>
+
+                @if (accountService.currentUser()) {
+                <div dropdown class="dropdown">
+                    <img class="me-2" src="{{accountService.currentUser()?.photoUrl || './assets/user.png'}}"
+                        alt="user main image" style="border-radius: 100%;">
+                    <a dropdownToggle class="dropdown-toggle  text-decoration-none">
+                        Welcome {{accountService.currentUser()?.knownAs}}
+                    </a>
+                    <div *dropdownMenu class="dropdown-menu">
+                        <a routerLink="/member/edit" class="dropdown-item">Edit profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" (click)="logout()">Logout</a>
+                    </div>
+                </div>
+                }
+                @if (!accountService.currentUser()) {
+                <!-- <form #loginForm="ngForm" (ngSubmit)="login()" class="d-flex" autocomplete="off">
+                    <input name="username" [(ngModel)]="model.username" class="form-control me-2"
+                        placeholder="Username">
+                    <input name="password" [(ngModel)]="model.password" class="form-control me-2" placeholder="Password"
+                        type="password">
+                    <button class="btn btn-success" type="submit">Login</button>
+                </form> -->
+                }
+
+
+
+            </div>
+
+            <!-- <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="fi" [ngClass]="getLanguageIconClass(multiLangService.languageSingnal())"></span> {{ selectedLanguageName }}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+                  <li *ngFor="let language of ['en', 'ur', 'hi', 'ar']">
+                    <a
+                      class="dropdown-item"
+                      (click)="toggleLanguage(language)"
+                      [ngClass]="{'active': multiLangService.languageSingnal() === language}"
+                    >
+                      <span class="fi" [ngClass]="getLanguageIconClass(language)"></span>
+                      {{ getLanguageName(language) }}
+                    </a>
+                  </li>
+                </ul>
+              </div> -->
+
+        </nav>
+    </div>
+</div>

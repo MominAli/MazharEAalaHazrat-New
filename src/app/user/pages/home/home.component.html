@@ -1,0 +1,96 @@
+<app-carousel></app-carousel>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3  col-sm-3 pt-4">
+      <div class="card">
+        <h6 class="card-header card-bg mb-3 ">Al Quran</h6>
+        <div class="card-body">
+          <p class="card-text">Explore, listen to, or download the Holy Qur'an in various formats for spiritual enrichment and daily recitation.</p>
+          <a (click)="goToQuran()" class="btn btn-sm btn-them pb-1 pt-1 px-3">View All</a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" col-md-3  col-sm-3 pt-4">
+      <div class="card">
+        <h6 class="card-header card-bg mb-3 ">Media</h6>
+        <div class="card-body">
+          <p class="card-text">A curated collection of inspiring Bayanaat and soulful Naat Shareef, echoing the voice of true Ahl-e-Sunnat devotion..</p>
+          <a (click)="goToMedia()" class="btn btn-sm btn-them pb-1 pt-1 px-3">View All</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3  col-sm-3 pt-4">
+      <div class="card">
+        <h6 class="card-header card-bg mb-3 ">Books</h6>
+        <div class="card-body">
+          <p class="card-text">Access Islamic literature on Aqaid-e-Ahl-e-Sunnat, Munazara, and the scholarly works of Mazhar-e-AalaHazrat.</p>
+          <a (click)="goToBooks()" class="btn btn-sm btn-them pt-1 px-3">View All</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3  col-sm-3 pt-4">
+      <div class="card">
+        <h6 class="card-header card-bg mb-3 ">Biograhpy</h6>
+        <div class="card-body">
+          <p class="card-text">Read a brief yet insightful life sketch of Mazhar E AalaHazrat Imamul Munazireen, Shaikh Hashmat Ali Khan Qadri RA.</p>
+          <a (click)="goToBiograhpy()" class="btn btn-sm btn-them pt-1 px-3">View All</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-events></app-events>
+
+<section class="feedback-donation-section mb-3">
+  <div class="feedback-donation-area">
+    <div class="container-fluid">
+      <div class="col-12 p-0">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="feedback">
+              <h6>FEEDBACK</h6>
+              <p>Please email your valuable feedback to mytest.gmail.com or click on the feedback button.</p>
+              <a class="feed-anch"> <button class="feedback-btn" (click)="goToFeedBack()">FEEDBACK</button> </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="donation">
+              <h6>DONATE</h6>
+              <p>Your donation can be used for any permissible, religious, reformatory, welfare, well-wishing,
+                Spiritual, and good purpose.</p>
+              <a class="donate-anch"> <button class="donation-btn" (click)="goToDonation()">GIVE DONATION</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>
+
+<!-- <div class="container mt-5">
+    <div style="text-align: center;">
+
+        @if (!registerMode) {
+        <div class="text-center">
+            <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register 00</button>
+        </div>
+        } @else {
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+                </div>
+            </div>
+        </div>
+        }
+
+    </div>
+</div>  -->

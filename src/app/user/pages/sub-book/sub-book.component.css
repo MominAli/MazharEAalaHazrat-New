@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #157784;
+  --secondary-color: #2c3e50;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+
+/* ============================= */
+/* 🔍 SEARCH BOX */
+/* ============================= */
+.search-container {
+  position: relative;
+  margin: 0 auto 50px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  border: none;
+  border-radius: 50px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(21, 119, 132, 0.3);
+}
+
+.search-container .search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(45deg, #157784, #157784);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-container .search-btn:hover {
+  background: #0f5c64;
+}
+
+/* ============================= */
+/* 📘 BOOK CARD */
+/* ============================= */
+.book-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(44, 62, 80, 0.2);
+  cursor: pointer;
+  background: var(--bg-color);
+}
+
+.card-img-wrapper {
+  height: 200px;
+  background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  transform: rotate(30deg);
+}
+
+.card-img-top {
+  max-height: 97px;
+  max-width: 90%;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 10px 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+/* ============================= */
+/* 🎯 BUTTONS */
+/* ============================= */
+.btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  background: linear-gradient(45deg, #157784, #157784);
+  color: white;
+  box-shadow: 0 3px 10px rgba(21, 119, 132, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.btn-read {
+  background: linear-gradient(45deg, #157784, #157784);
+  box-shadow: 0 3px 10px rgba(46, 204, 113, 0.3);
+}
+
+.btn-outline-dark {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  transform: translateY(-2px);
+}
+
+/* ============================= */
+/* 📄 PAGINATION */
+/* ============================= */
+.pagination-wrapper {
+  margin-top: 20px;
+}
+
+.pagination .active a {
+  background-color: var(--primary-color) !important;
+  color: var(--bg-color);
+}
+
+.pagination a {
+  color: var(--primary-color) !important;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* ⏳ LOADING */
+/* ============================= */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .card-img-top {
+    max-height: 150px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .card-title {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .card-img-top {
+    max-height: 180px;
+  }
+}

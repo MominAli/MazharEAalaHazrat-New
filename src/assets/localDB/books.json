@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "title": "Futhwate E Abulfatah",
+    "hasChildren": true,
+    "img": "assets/books/FutuhaatAbulFatah/18.PNG",
+    "subBooks": [
+      {
+        "id": 101,
+        "title": "01 Muqadma",
+        "img": "assets/books/FutuhaatAbulFatah/1.jpeg",
+        "pdfPath": "assets/books/01 Muqadma.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 102,
+        "title": "02 Munazra Naunihal",
+        "img": "assets/books/FutuhaatAbulFatah/2.jpeg",
+        "pdfPath": "assets/books/02 Munazra Naunihal.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 103,
+        "title": "03 Munazra Punjab",
+        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+        "pdfPath": "assets/books/03 Munazra Punjab.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 104,
+        "title": "04 Munazra Lucknow",
+        "img": "assets/books/FutuhaatAbulFatah/4.jpeg",
+        "pdfPath": "assets/books/04 Munazra Lucknow.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 105,
+        "title": "05 Munazra Mumbai Vol 1",
+        "img": "assets/books/FutuhaatAbulFatah/5.jpeg",
+        "pdfPath": "assets/books/05 Munazra Mumbai Vol 1.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 106,
+        "title": "06 Munazra Padra Vol 1",
+        "img": "assets/books/FutuhaatAbulFatah/6.jpeg",
+        "pdfPath": "assets/books/06 Munazra Padra Vol 1.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 107,
+        "title": "07 Munazra Rander",
+        "img": "assets/books/FutuhaatAbulFatah/7.jpeg",
+        "pdfPath": "assets/books/07 Munazra Rander.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 108,
+        "title": "08 Munazra Padra Vol 2",
+        "img": "assets/books/FutuhaatAbulFatah/8.jpeg",
+        "pdfPath": "assets/books/08 Munazra Padra Vol 2.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 109,
+        "title": "09 Munazra Malegaon",
+        "img": "assets/books/FutuhaatAbulFatah/9.jpeg",
+        "pdfPath": "assets/books/09 Munazra Malegaon.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 110,
+        "title": "10 Munazra Mumbai Vol 2",
+        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+        "pdfPath": "assets/books/10 Munazra Mumbai Vol 2.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 111,
+        "title": "11 Munazra Shambhal",
+        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+        "pdfPath": "assets/books/11 Munazra Shambhal.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 112,
+        "title": "12 Munazra Rangoon & Mandlay Vol 1",
+        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+        "pdfPath": "assets/books/12 Munazra Rangoon & Mandlay Vol 1.pdf",
+         "hasChildren": false
+      },
+      {
+        "id": 113,
+        "title": "13 Munazra Rangoon & Mandlay Vol 2",
+        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+        "pdfPath": "assets/books/13 Munazra Rangoon & Mandlay Vol 2.pdf",
+         "hasChildren": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "surah1",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/2.jpeg",
+    "pdfPath": "assets/quran/surah/alqurankarim/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 3,
+    "title": "Simple Book 3",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/1.jpeg",
+    "pdfPath": "assets/books/01 Muqadma.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 4,
+    "title": "Simple Book 4",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/6.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 5,
+    "title": "Simple Book 5",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/2.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 6,
+    "title": "Simple Book 6",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/9.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 7,
+    "title": "Simple Book 7",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/5.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 8,
+    "title": "Simple Book 8",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/4.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 9,
+    "title": "Simple Book 9",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 10,
+    "title": "Simple Book 10",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/2.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 11,
+    "title": "Simple Book 11",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/1.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  },
+  {
+    "id": 12,
+    "title": "Simple Book 12",
+    "hasChildren": false,
+    "img": "assets/books/FutuhaatAbulFatah/6.jpeg",
+    "pdfPath": "assets/quran/surah1.pdf",
+    "subBooks": []
+  }
+]

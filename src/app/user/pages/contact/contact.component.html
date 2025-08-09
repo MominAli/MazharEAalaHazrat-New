@@ -1,0 +1,37 @@
+<app-hero-banner
+  [title]="'Contact Us'"
+  [subtitle]="'Explore, read, and download your favorite books'">
+</app-hero-banner>
+<div class="container">
+  <div class="contact-us">
+    <!-- <h3 class="text-primary">Contact Us</h3> -->
+    <div class="contact-container">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea>
+  
+        <button type="submit" style="background-color:#157784;border-color: #157784;color: white;width:100px;">Send</button>
+      </form>
+  
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.710218442357!2d72.85616491490022!3d19.118166987073234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c630e3c65a21%3A0x5db3103dabbff303!2sBhiwandi%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1619531445343!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+  

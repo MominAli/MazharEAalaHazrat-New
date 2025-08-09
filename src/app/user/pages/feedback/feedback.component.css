@@ -1,0 +1,30 @@
+/* ============================= */
+/* 📝 FEEDBACK FORM STYLES */
+/* ============================= */
+.container form {
+  padding-bottom: 14px;
+}
+
+form .form-control {
+  border: none;
+  border-radius: 7px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  padding: 10px 15px;
+}
+
+form textarea.form-control {
+  resize: vertical;
+}
+
+form .btn-primary {
+  background: linear-gradient(45deg, #157784, #157784);
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+

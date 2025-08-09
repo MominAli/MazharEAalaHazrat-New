@@ -1,0 +1,93 @@
+<app-loader [loading]="loading"></app-loader>
+<div *ngIf="!loading">
+
+<app-hero-banner
+  [title]="'AL Quran Library'"
+  [subtitle]="'Explore, read, and download your favorite books'">
+</app-hero-banner>
+<div>
+
+
+   <section class="background-list background-list-image">
+    <div class="d-flex g-0">
+      <div class="col-md-4 bg-white"></div>
+      <div class="col-md-4">
+        <img src="assets/img/quran/par_top.png" class="w-100" alt="Top Quran Image">
+      </div>
+      <div class="col-md-4 bg-white"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 pt-lg-5 mt-lg-5 pb-lg-5 mb-lg-5">
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item col-lg-6 col-md-6 col-12 text-center" role="presentation">
+              <a class="nav-link active border-bottom" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                type="button" role="tab" aria-controls="home" aria-selected="true">LIST OF SURAH</a>
+            </li>
+            <li class="nav-item col-lg-6 col-md-6 col-12 text-center" role="presentation">
+              <a class="nav-link border-bottom" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">LIST OF JUZ (PARAH)</a>
+            </li>
+          </ul>
+
+          <div class="tab-content border" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <!-- Start First Tab -->
+              <div class="row g-3">
+                <div *ngFor="let surah of surahLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
+                  <div class="card-list border">
+                    <a class="text-decoration-none" (click)="goToSurahDetails(surah)">
+                      <div class="row">
+                        <div class="col-2 px-1 text-center">
+                          <p class="serial-number m-0 p-0">{{ surah.surahNumber }}</p>
+                        </div>
+                        <div class="col-8 text-center">
+                          <h3 class="list-name-english d-black margin-top-10 mb-0 p-0">{{ surah.suranameEng }}</h3>
+                          <h4 class="list-name-urdu margin-top-10 margin-bottom-10 p-0">{{ surah.suranameArabic }}</h4>
+                        </div>
+                        <div class="col-2 pt-2">
+                          <img [src]="surah.imgSrc" [alt]="surah.imgAlt" style="width: 25px;">
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End First Tab -->
+            </div>
+
+            <!-- Start Second Tab -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row g-3">
+                <div *ngFor="let para of paraLists" class="col-lg-4 col-sm-12 col-md-6 col-12 mb-20">
+                  <div class="card-list">
+                    <a class="text-decoration-none" (click)="goToParaDetails(para)">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-5 col-5 pr-0">
+                          <h5 class="para-name">Para {{ para.paraNumber }}</h5>
+                        </div>
+                        <div class="col-lg-6 col-6 text-end p-0">
+                          <h3 class="list-para-name-urdu d-black p-0">{{ para.paraName }}</h3>
+                        </div>
+                        <div class="col-2 pt-2"></div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Second Tab -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+</div>
+
+<app-footer></app-footer>
+</div>
+  

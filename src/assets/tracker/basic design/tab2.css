@@ -1,0 +1,127 @@
+
+body {
+     font-size: 16px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+    color: #444444;
+    font-weight: 400;
+    background-color: #f5f5f5;
+}
+.bookSession {
+    background-color: #f5f5f5;
+}
+.book-list-card li {
+    list-style: none;
+    margin: 5px 0;
+    line-height: 18px;
+    width: 100%;
+    border-left: 2px solid #3b3b79;
+    transition: .3s;
+}
+.nav-tabs.book-list-card {
+    border: none;
+}
+
+.nav-tabs.book-list-card li a {
+    border: none ;
+    text-decoration: none;
+    color: rgb(59 59 121);
+    font-size: 18px;
+    display: block;
+    padding: 7px;
+    height: 100%;
+    background: #fff;
+    border-radius: 0px;
+}
+.nav-tabs.book-list-card  li:hover a {
+    background: #3b3b79;
+    color: #fff;
+}
+
+.img.tittle a {
+    text-decoration: none;
+}
+.img.tittle {
+    background: #fff;
+    padding: 15px 0 0;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    border-radius: 10px;
+}
+p.book_name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    padding: 10px;
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+    
+}
+.menu-toggle1 {
+margin: 0 0 6px;
+font-size: 30px;
+}
+
+.categoriesName {
+width: 100%;
+justify-content: space-between;
+background-color: #3c3a7d;
+color: #fff;
+align-items: center;
+padding: 7px 15px;
+width: 100%;
+}
+
+.justify-content-center.pagination a {
+ color: #000;
+}
+ /* Mobile: Tabs Slide In from Left */
+ @media (max-width: 768px) {
+    .tab-container {
+        flex-direction: column;
+    }
+    .mobileTabs {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+        transition: left 0.4s ease-in-out;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    .mobileTabs.show {
+        left: 0;
+    }
+    .tab-content {
+        width: 100%;
+    }
+   .mobiledown {
+    font-size: 26px;
+    font-weight: bold;
+   }
+    
+    .menu-toggle {
+        
+        padding: 10px;
+        border: none;
+        z-index: 1100;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #000;
+        display: block;
+    }
+    .book-list-card li {
+        margin: 2px 0px 2px 13px;
+    }
+}

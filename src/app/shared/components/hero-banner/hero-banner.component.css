@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #157784;
+  --text-color: #333333;
+}
+
+/* ============================= */
+/* 📚 HERO SECTION */
+/* ============================= */
+.hero-section {
+  background: linear-gradient(to right, #e3f2fd, #f1f8e9);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}

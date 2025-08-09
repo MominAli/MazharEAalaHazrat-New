@@ -1,0 +1,28 @@
+<app-loader [loading]="loading"></app-loader>
+
+<div *ngIf="!loading">
+  <app-hero-banner [title]="title" [subtitle]="'Explore, read, and download your favorite books'">
+  </app-hero-banner>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 pb-5">
+          <!-- PDF Viewer -->
+          <ngx-extended-pdf-viewer *ngIf="pdfPath" [src]="pdfPath" [height]="isMobile ? '80vh' : '190vh'"
+            [textLayer]="true" [showHandToolButton]="false" [showDownloadButton]="true" [showZoomButtons]="false"
+            [mobileFriendlyZoom]="'true'" [zoom]="'auto'" [showFindButton]="false" [showSidebarButton]="false"
+            [showSecondaryToolbarButton]="false">
+          </ngx-extended-pdf-viewer>
+
+          <!-- Fallback Message -->
+          <div *ngIf="!pdfPath" class="alert alert-warning text-center mt-5">
+            ⚠️ PDF not available for this book. Please check back later or explore other titles.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<app-footer></app-footer>

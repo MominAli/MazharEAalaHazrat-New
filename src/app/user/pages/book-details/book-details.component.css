@@ -1,0 +1,205 @@
+.next-section {
+    background-color: var(--primary-color);
+    padding: 6px 6px;
+    border-radius: 40px 0px 0px 40px;
+    color: var(--bg-color);
+    border: 5px solid var(--primary-color);
+    font-size: 14px;
+    width: 140px;
+    float: left;
+    text-align: center;
+    font-size: 10px !important;
+    text-decoration: none;
+  }
+  
+  .previous-section {
+    background-color: var(--primary-color);
+    padding: 6px 6px;
+    border-radius: 0px 40px 40px 0px;
+    color:var(--bg-color);
+    border: 5px solid var(--primary-color);
+    font-size: 14px;
+    width: 140px;
+    float: right;
+    text-align: center;
+    font-size: 10px !important;
+    text-decoration: none;
+  }
+  
+  .text-title p {
+    font-family: font-family;
+    font-size: 20px;
+    color:var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .text-title-ar {
+    font-family: font-family;
+    font-size: 20px;
+    color:var(--primary-color);
+    font-weight: bold;
+    direction: rtl !important;
+  }
+  
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .font-large {
+    font-size: 20px !important;
+  }
+  
+  .para-image-bg {
+    border: 10px solid var(--primary-color);
+    text-align: justify;
+    background-color:var(--light-secondary-color);
+    min-height: 55rem;
+  }
+  
+  .dynamic-font {
+    font-size: 42px;
+    border-bottom: 1px solid;
+    margin: 0px;
+    line-height: 52px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .section-header {
+    display: inline-block;
+    position: relative;
+    color: var(--bg-color);
+    height: 40px;
+    padding: 0 20px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: math;
+    z-index: 2;
+    width: 190px;
+  }
+  
+  .section-footer {
+    border-bottom: 4px solid var(--light-secondary-color);
+  }
+  
+  .section-header:before {
+    z-index: 1;
+    content: "";
+    top: 0;
+    left: -8px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid var(--light-secondary-color);
+    border-left: 8px solid transparent;
+  }
+  
+  .section-header:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--light-secondary-color);
+  }
+  
+  .side-panel-bg {
+    background:var(--light-secondary-color);
+  }
+  
+  .select-box {
+    line-height: 40px;
+    color: var(--primary-color);
+    text-align: right;
+    font-family: math !important;
+    font-size: 20px;
+    display: block;
+    border-right: 5px solid var(--primary-color) !important;
+  }
+  
+  .label-style {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0px;
+    background-color:var(--light-secondary-color);
+    text-align: left;
+    border-radius: 0px 0px;
+    margin-left: -15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 58px;
+  }
+  
+  .no-decoration {
+    text-decoration: none;
+  }
+  
+  .action-button {
+    background: var(--primary-color);
+    color:var(--bg-color);
+    padding: 6px 10px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .section-header.full-width {
+    width: 300px;
+  }
+  
+  .switch-form {
+    right: 20px;
+    top: -1px;
+  }
+  
+  .form-switch .form-check-input {
+    background-color: var(--secondary-color);
+  }
+  
+  .form-check-input:checked, 
+  .form-check-input:focus, 
+  .form-select:focus {
+    border: none;
+    box-shadow: none;
+  }
+  
+  .form-switch-lg .form-check-input {
+    height: 2rem;
+    width: calc(3rem + 0.75rem);
+    border-radius: 4rem;
+  }
+  
+  .form-switch-xl .form-check-input {
+    height: 2.5rem;
+    width: calc(4rem + 0.75rem);
+    border-radius: 5rem;
+  }
+  
+  .bottom-buttons a {
+    color:var(--bg-color);
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 10px 6px;
+    border-radius: 5px 10px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .next-section, .previous-section {
+        width: 70px;
+    }
+  }
+  

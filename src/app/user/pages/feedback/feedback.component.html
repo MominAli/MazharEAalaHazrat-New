@@ -1,0 +1,59 @@
+<app-hero-banner
+  [title]="'FeedBack'"
+  [subtitle]="'Explore, read, and download your favorite books'">
+</app-hero-banner>
+<div class="container mt-4 pt-5">
+    <h3 class="text-primary">FeedBack</h3>
+    <form style="padding-bottom: 14px;">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <input id="form_name" formControlName="form_name" class="form-control" type="text" placeholder="Enter Name" maxlength="50">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input id="form_email" formControlName="form_email" class="form-control" type="email" placeholder="Enter Email">
+            </div>
+            <div class="col-md-4 mb-3">
+                <input id="form_no" formControlName="form_no" class="form-control" type="number" placeholder="Enter Mobile Number">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <input id="form_appointed" formControlName="form_appointed" class="form-control" type="text" placeholder="Enter Appointed">
+            </div>
+            <div class="col-md-3 mb-3">
+                <select id="country" formControlName="country" class="form-control">
+                    <option>Select Country</option>
+                    <option value="AW">INDIA</option>
+                    <option value="AF">IRAQ</option>
+                    <option value="AO">YAMAN</option>
+                    <option value="AI">IRAN</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <input id="form_zone" formControlName="form_zone" class="form-control" type="text" placeholder="Province">
+            </div>
+            <div class="col-md-3 mb-3">
+                <input id="form_kabina" formControlName="form_kabina" class="form-control" type="text" placeholder="City">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <textarea id="form_address" formControlName="form_address" class="form-control" placeholder="Address" maxlength="500"></textarea>
+            </div>
+            <div class="col-md-6 mb-3">
+                <textarea id="form_summary" formControlName="form_summary" class="form-control" placeholder="Complain Summary" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mb-3">
+                <textarea id="form_message" formControlName="form_message" class="form-control" rows="5" placeholder="Enter Message" maxlength="500"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+<app-footer></app-footer>

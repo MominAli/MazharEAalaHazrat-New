@@ -1,0 +1,141 @@
+
+body {
+     font-size: 16px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+   
+    color: #444444;
+    font-weight: 400;
+}
+.picture_top {
+    padding-top: 170px;
+}
+.bgList {
+    background-color: #e6e8eb;
+}
+
+.bgListimg ul.nav-tabs li a {
+
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    padding: 18px 25px;
+    background-color: #f1f1f1;
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(to top right, #f9f9f9 50%, #f1f1f1 50%);
+    border-radius: 50px 50px 0px 0px;
+    font-weight: bold;
+    color: #1c669d;
+}
+
+.bgListimg ul.nav-tabs li a.active {
+    background-position: center;
+    background-size: 100%;
+    background: #157784;
+    color: white;
+    border-color: transparent;
+}
+
+.tab-content {
+    line-height: 25px;
+    border: 1px solid #ddd;
+    /* border-top: 5px solid #29879f; */
+    border-bottom: 3px solid #29879f;
+    padding: 30px 25px;
+    background: #ffffffbf;
+    direction: ltr;
+    text-align: left;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.cardList {
+    background: white;
+    padding: 0px 10px;
+    border: 1px solid #dce7f0;
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 4px 8px 10px -7px #00000024;
+    border-radius: 10px;
+}
+.cardList a {
+    list-style: none;
+}
+.ListNameE {
+    color: #565555 !important;
+    padding-right: 6px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ListNameU {
+    font-family: Al-Qalam;
+    direction: rtl !important;
+    font-size: 20px;
+    color: #3274a6;
+    font-weight: bold;
+}
+.serialNo {
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    background: white;
+    font-weight: bold;
+    margin-left: -2px !important;
+    color: #1c669d;
+}
+
+.cardList a:hover .serialNo {
+    box-shadow: -1px 0px 0px 1px #1c669d3d, inset -9px 0px 7px -6px #98afc1;
+    box-shadow: 0px 0px 10px #0000004f;
+    
+}
+
+.paraName {
+    font-size: 20px;
+    padding: 10px 8px;
+    border-radius: 0px;
+    margin: 0px;
+    transition: 0.3s;
+    background: white;
+    font-weight: bold;
+    color: #1c669d;
+    margin-left: -11px;
+}
+.ListParaNameU {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+    color: #565555 ;
+    font-weight: bold;
+}
+.cardList a:hover h5 {
+box-shadow: 0px 0px 13px -3px #8899a7;
+}
+
+
+
+
+
+@media (max-width: 768px) { 
+    .bgListimg ul.nav-tabs li a {
+        border-radius: 0px;
+  } 
+ }
+
+

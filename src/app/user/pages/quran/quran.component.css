@@ -1,0 +1,168 @@
+/* ============================= */
+/* 📘 QURAN LIBRARY SECTION */
+/* ============================= */
+.background-list {
+  background-color: var(--light-secondary-color);
+}
+
+.background-list-image ul.nav-tabs li a {
+  border: 1px solid transparent;
+  border-radius: 50px 50px 0 0;
+  padding: 18px 25px;
+  background: linear-gradient(to top right, #f9f9f9 50%, #f1f1f1 50%);
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.background-list-image ul.nav-tabs li a.active {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  border-color: transparent;
+}
+
+/* ============================= */
+/* 📑 TAB CONTENT */
+/* ============================= */
+.tab-content {
+  line-height: 25px;
+  border: 1px solid var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+  padding: 30px 25px;
+  background: var(--bg-color);
+  direction: ltr;
+  text-align: left;
+}
+
+/* ============================= */
+/* 🧾 CARD LIST STYLES */
+/* ============================= */
+.card-list {
+  background: var(--bg-color);
+  padding: 0 10px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 4px 8px 10px -7px var(--secondary-color);
+  border-radius: 10px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.card-list a {
+  text-decoration: none;
+}
+
+.card-list a:hover .serial-number {
+  box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.card-list a:hover h5 {
+  box-shadow: 0 0 13px -3px var(--secondary-color);
+}
+
+/* ============================= */
+/* 🔢 SURAH STYLES */
+/* ============================= */
+.serial-number {
+  width: 50px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  margin-left: -2px !important;
+}
+
+.list-name-english {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--text-color) !important;
+  padding-right: 6px;
+}
+
+.list-name-urdu {
+  font-family: Al-Qalam;
+  direction: rtl !important;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-bottom-10 {
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* 📖 PARA STYLES */
+/* ============================= */
+.para-name {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 8px;
+  background: var(--bg-color);
+  color: var(--primary-color);
+  margin: 0;
+  margin-left: -11px;
+  transition: 0.3s;
+}
+
+.list-para-name-urdu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+
+/* ============================= */
+/* ⏳ LOADING OVERLAY */
+/* ============================= */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ============================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ============================= */
+@media (max-width: 768px) {
+  .background-list-image ul.nav-tabs li a {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-responsive {
+    padding: 80px 0 !important;
+  }
+}
+
+@media (max-width: 610px) {
+  .modal-responsive {
+    padding: 68px 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-responsive {
+    padding: 50px 0 !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .modal-responsive {
+    padding: 40px 0 !important;
+  }
+}
