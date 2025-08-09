@@ -9,16 +9,17 @@ img {
   display: inline;
 }
 
-.bg-nav {
-  background-color: #fff;
+.nav-background {
+    background: var(--gradient-primary);
+    color: var(--text-color);
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #157784 !important;
+  color: var(--text-color) !important;
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: 157784 !important;
+  color: var(--text-color) !important;
 }
 
 .navbarTop {
@@ -27,13 +28,10 @@ img {
 
 .navbarTop.fixed-top.animate {
   animation: slideDown 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-medium);
 
 }
 
-.card-bg {
-    background: linear-gradient(to right, #e3f2fd, #f1f8e9);
-}
 
 .navbar-nav .nav-link.active {
   font-weight: 600;

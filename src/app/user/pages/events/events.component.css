@@ -1,19 +1,23 @@
 .event-item img {
   height: 190px;
-  object-fit: center center; /* shows full image without cropping */
+  object-fit: center center;
+  /* shows full image without cropping */
   width: 100%;
   border-radius: 8px;
-  background-color: #f0f0f0; /* optional: fills empty space */
+  background-color: var(--color-background)
+    /* optional: fills empty space */
 }
 
+
+
 .btn-them {
-    background-color: var(--button-bg);
-    color: var(--bg-color);
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    padding-bottom: 6px;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 6px;
 }
 
 @media (max-width: 768px) {
@@ -21,4 +25,3 @@
     height: 180px;
   }
 }
-

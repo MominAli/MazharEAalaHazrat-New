@@ -2,8 +2,8 @@ footer {
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color: #157784;
-    color: #fff;
+    background-color:var(--color-primary);
+    color: var(--color-text);
     position: fixed;
     bottom: 0;
     width: 100%;

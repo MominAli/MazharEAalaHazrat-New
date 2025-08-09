@@ -1,4 +1,4 @@
-<div class="container-fluid bg-nav navbarTop card-bg" id="mainNavbar">
+<div class="container-fluid navbarTop nav-background" id="mainNavbar">
     <div class="container">
         <nav class="navbar navbar-light navbar-expand-lg py-3 border-bottom-0">
             <a href="index.html">
@@ -9,8 +9,8 @@
             </a>
 
             <!-- Theme Toggle Button -->
-            <button class="btn btn-outline-secondary ms-2 d-flex border align-items-center position-absolute" (click)="toggleTheme()"
-                aria-label="Toggle theme">
+            <button class="btn btn-outline-secondary ms-2 d-flex border align-items-center position-absolute"
+                (click)="toggleTheme()" aria-label="Toggle theme">
                 <i class="bi" [ngClass]="currentTheme === 'dark' ? 'bi-moon-fill' : 'bi-sun-fill'"></i>
             </button>
 
