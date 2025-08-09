@@ -1,0 +1,134 @@
+:root {
+  /* 🎨 COLORS */
+  --color-primary: #157784;
+  --color-secondary: #6b6b6e;
+  --color-secondary-light: #f5f5f5;
+  --color-text: #000000;
+  --color-text-muted: #666666;
+  --color-background: #ffffff;
+  --color-highlight-bg: #fffbe5;
+  --color-highlight-border: #f1c40f;
+  --color-breadcrumb-overlay: #d8d8d8;
+
+  /* 🌈 GRADIENTS */
+  --gradient-primary: linear-gradient(45deg, var(--color-primary), var(--color-primary));
+  --gradient-card-bg: linear-gradient(to right, #e3f2fd, #f1f8e9);
+  --gradient-tab-bg: linear-gradient(to top right, #f9f9f9 50%, #f1f1f1 50%);
+  --gradient-overlay-light: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+
+  /* 🧱 BORDERS */
+  --border-color-primary: var(--color-primary);
+  --border-color-secondary: var(--color-secondary);
+  --border-color-muted: #cccccc;
+  --border-color-highlight: var(--color-highlight-border);
+  --border-color-transparent: transparent;
+
+  /* 🔤 FONTS */
+  --font-family-base: Arial, sans-serif;
+  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-ui: 'Segoe UI', Roboto, sans-serif;
+  --font-family-rtl: 'Al-Qalam', serif;
+  --font-family-monospace: 'Courier New', monospace;
+
+  /* 🔠 FONT SIZES */
+  --font-size-xxs: 0.625rem;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-display-sm: 2rem;
+  --font-size-display-md: 2.625rem;
+  --font-size-display-lg: 3.5rem;
+
+  /* 🏋️ FONT WEIGHTS */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* 📏 LINE HEIGHTS */
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-loose: 1.8;
+
+  /* 📐 LETTER SPACING */
+  --letter-spacing-tight: -0.03125rem;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.03125rem;
+
+  /* 🔠 TEXT TRANSFORMATIONS */
+  --text-transform-uppercase: uppercase;
+  --text-transform-lowercase: lowercase;
+  --text-transform-capitalize: capitalize;
+
+  /* 📐 SPACING */
+  --spacing-padding-xs: 0.375rem;
+  --spacing-padding-sm: 0.625rem;
+  --spacing-padding-md: 0.9375rem;
+  --spacing-padding-lg: 1.25rem;
+  --spacing-padding-xl: 1.5625rem;
+  --spacing-padding-xxl: 1.875rem;
+
+  --spacing-margin-xs: 0.625rem;
+  --spacing-margin-sm: 1.25rem;
+  --spacing-margin-md: 2.5rem;
+
+  --spacing-gap-xs: 0.375rem;
+  --spacing-gap-sm: 0.625rem;
+  --spacing-gap-md: 1.25rem;
+
+  /* 🧩 RADIUS */
+  --radius-xs: 4px;
+  --radius-sm: 7px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 15px;
+  --radius-pill: 20px;
+  --radius-full: 40px;
+
+  /* 📐 CONTAINER */
+  --container-max-width: 62.5rem;
+
+  /* 📊 COMPONENT SIZES */
+  --size-btn-search: 2.5rem;
+  --size-header-height: 2.5rem;
+  --size-header-width: 11.875rem;
+  --size-header-full-width: 18.75rem;
+
+  --size-switch-lg-height: 2rem;
+  --size-switch-lg-width: calc(3rem + 0.75rem);
+  --size-switch-xl-height: 2.5rem;
+  --size-switch-xl-width: calc(4rem + 0.75rem);
+
+  /* 🧩 SHADOWS */
+  --shadow-light: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1);
+  --shadow-card-hover: 0 0.375rem 0.75rem rgba(44, 62, 80, 0.2);
+  --shadow-button: 0 0.1875rem 0.625rem rgba(21, 119, 132, 0.3);
+  --shadow-read-btn: 0 0.1875rem 0.625rem rgba(46, 204, 113, 0.3);
+  --shadow-card-list: 0.25rem 0.5rem 0.625rem -0.4375rem var(--color-secondary);
+  --shadow-box: 0 0 0.9375rem var(--color-secondary);
+  --shadow-input: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1);
+  --shadow-none: none;
+
+  /* 🧭 Z-INDEX */
+  --z-index-overlay: 9999;
+  --z-index-tabs: 1000;
+  --z-index-header: 100;
+  --z-index-modal: 1050;
+  --z-index-tooltip: 1070;
+
+  /* 🕶️ OPACITY */
+  --opacity-disabled: 0.5;
+  --opacity-overlay: 0.81;
+
+  /* 🧮 TRANSITIONS */
+  --transition-fast: all 0.2s ease;
+  --transition-default: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+}

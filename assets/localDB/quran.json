@@ -1,0 +1,1948 @@
+{
+    "surahs": [
+        {
+            "surahNumber": "1",
+            "suranameEng": "Al Fatiha",
+            "suranameArabic": "اَلْفَاتِحَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Fatiha",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah1.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/001.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "2",
+            "suranameEng": "Al Baqarah",
+            "suranameArabic": "اَلْبَقَرَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Baqarah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah2.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/002.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "3",
+            "suranameEng": "Al Imran",
+            "suranameArabic": "اٰلِ عِمْرَان",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Imran",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah3.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/003.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "4",
+            "suranameEng": "An Nisa",
+            "suranameArabic": "اَلنِّسَآء",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "An Nisa",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah4.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/004.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "5",
+            "suranameEng": "Al Maidah",
+            "suranameArabic": "اَلْمَـآئِدَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Maidah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah5.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/005.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "6",
+            "suranameEng": "Al Anam",
+            "suranameArabic": "اَلْاَ نْعَام",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Anam",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah6.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/006.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "7",
+            "suranameEng": "Al Araf",
+            "suranameArabic": "اَلْاَعْرَاف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Araf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah7.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/007.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "8",
+            "suranameEng": "Al Anfal",
+            "suranameArabic": "اَلْاَنْفَال",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Anfal",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah8.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/008.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "9",
+            "suranameEng": "At Tawbah",
+            "suranameArabic": "اَلتَّوْبَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Tawbah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah9.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/009.mp3",
+            "type":"surah"
+            
+        },
+        {
+            "surahNumber": "10",
+            "suranameEng": "Yunus",
+            "suranameArabic": "يُوْنُس",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Yunus",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah10.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/010.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "11",
+            "suranameEng": "Hud",
+            "suranameArabic": "هُود",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Hud",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah11.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/011.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "12",
+            "suranameEng": "Yusuf",
+            "suranameArabic": "يُوْسُف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Yusuf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah12.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/012.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "13",
+            "suranameEng": "Ar Rad",
+            "suranameArabic": "اَلرَّعْد",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Ar Rad",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah13.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/013.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "14",
+            "suranameEng": "Ibrahim",
+            "suranameArabic": "اِبْرٰهِيم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ibrahim",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah14.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/014.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "15",
+            "suranameEng": "Al Hijr",
+            "suranameArabic": "اَلْحِجْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Hijr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah15.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/015.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "16",
+            "suranameEng": "An Nahl",
+            "suranameArabic": "اَلنَّحْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Nahl",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah16.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/016.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "17",
+            "suranameEng": "Al Isra",
+            "suranameArabic": "اَلْإِسْرَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Isra",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah17.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/017.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "18",
+            "suranameEng": "Al Kahf",
+            "suranameArabic": "اَلْكَهْف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Kahf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah18.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/018.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "19",
+            "suranameEng": "Maryam",
+            "suranameArabic": "مَرْيَم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Maryam",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah19.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/019.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "20",
+            "suranameEng": "Taha",
+            "suranameArabic": "طٰهٰ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Taha",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah20.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/020.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "21",
+            "suranameEng": "Al Anbiya",
+            "suranameArabic": "اَلْأَنْبِيَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Anbiya",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah21.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/021.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "22",
+            "suranameEng": "Al Hajj",
+            "suranameArabic": "اَلْحَجّ",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Hajj",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah22.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/022.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "23",
+            "suranameEng": "Al Muminoon",
+            "suranameArabic": "اَلْمُؤْمِنُوْن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Muminoon",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah23.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/023.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "24",
+            "suranameEng": "An Noor",
+            "suranameArabic": "اَلنُّوْر",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "An Noor",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah24.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/024.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "25",
+            "suranameEng": "Al Furqan",
+            "suranameArabic": "اَلْفُرْقَان",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Furqan",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah25.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/025.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "26",
+            "suranameEng": "Surah Ash Shuara",
+            "suranameArabic": "اَلشُّـعَرَاء",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Surah Ash Shuara",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah26.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/026.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "27",
+            "suranameEng": "An Naml",
+            "suranameArabic": "اَلنَّمْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Naml",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah27.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/027.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "28",
+            "suranameEng": "Al Qasas",
+            "suranameArabic": "اَلْقَصَص",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qasas",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah28.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/028.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "29",
+            "suranameEng": "Al Ankabut",
+            "suranameArabic": "اَلْعَنْـكَبُوْت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ankabut",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah29.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/029.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "30",
+            "suranameEng": "Ar Rum",
+            "suranameArabic": "اَلرُّوْم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ar Rum",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah30.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/030.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "31",
+            "suranameEng": "Luqman",
+            "suranameArabic": "لُقْمٰن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Luqman",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah31.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/031.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "32",
+            "suranameEng": "As Sajdah",
+            "suranameArabic": "اَلسَّجْدَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "As Sajdah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah32.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/032.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "33",
+            "suranameEng": "Al Ahzab",
+            "suranameArabic": "اَلْاَحْزَاب",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ahzab",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah33.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/033.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "34",
+            "suranameEng": "Saba",
+            "suranameArabic": "سَبَا",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Saba",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah34.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/034.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "35",
+            "suranameEng": "Fatir",
+            "suranameArabic": "اَلْفَاطِر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Fatir",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah35.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/035.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "36",
+            "suranameEng": "Yasin",
+            "suranameArabic": "يـٰسٓ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Yasin",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah36.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/036.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "37",
+            "suranameEng": "As Saffat",
+            "suranameArabic": "اَلصّٰٓفّٰت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "As Saffat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah37.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/037.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "38",
+            "suranameEng": "Sad",
+            "suranameArabic": "صٓ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Sad",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah38.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/038.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "39",
+            "suranameEng": "Az Zumar",
+            "suranameArabic": "اَلزُّمَر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Az Zumar",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah39.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/039.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "40",
+            "suranameEng": "Ghafir",
+            "suranameArabic": "اَلْمُؤْمِن (اَلْغَافِر)",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ghafir",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah40.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/040.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "41",
+            "suranameEng": "Fussilat",
+            "suranameArabic": "حٰمٓ اَلسَّجْدَۃ (فُصِّلَت)",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Fussilat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah41.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/041.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "42",
+            "suranameEng": "Ash  Shura",
+            "suranameArabic": "اَلشُّوْرٰی",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ash  Shura",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah42.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/042.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "43",
+            "suranameEng": "Az Zukhruf",
+            "suranameArabic": "اَلزُّخْرُف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Az Zukhruf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah43.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/043.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "44",
+            "suranameEng": "Ad Dukhan",
+            "suranameArabic": "اَلدُّخَان",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ad Dukhan",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah44.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/044.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "45",
+            "suranameEng": "Al Jasia",
+            "suranameArabic": "اَلْجَاثِيَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Jasia",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah45.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/045.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "46",
+            "suranameEng": "Al Ahqaf",
+            "suranameArabic": "اَلْاَحْقَاف",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ahqaf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah46.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/046.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "47",
+            "suranameEng": "Muhammad",
+            "suranameArabic": "مُحَمَّد",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Muhammad",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah47.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/047.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "48",
+            "suranameEng": "Al Fath",
+            "suranameArabic": "اَلْفَتْح",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Fath",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah48.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/048.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "49",
+            "suranameEng": "Al Hujurat",
+            "suranameArabic": "اَلْحُجُرٰت",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Hujurat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah49.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/049.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "50",
+            "suranameEng": "Qaf",
+            "suranameArabic": "قٓ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Qaf",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah50.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/050.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "51",
+            "suranameEng": "Az Zariyat",
+            "suranameArabic": "اَلذّٰرِيـٰت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Az Zariyat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah51.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/051.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "52",
+            "suranameEng": "At Tur",
+            "suranameArabic": "اَلطُّوْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Tur",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah52.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/052.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "53",
+            "suranameEng": "An Najm",
+            "suranameArabic": "اَلنَّجْم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Najm",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah53.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/053.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "54",
+            "suranameEng": "Al Qamar",
+            "suranameArabic": "اَلْقَمَر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qamar",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah54.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/054.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "55",
+            "suranameEng": "Ar Rahman",
+            "suranameArabic": "اَلرَّحْمٰن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ar Rahman",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah55.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/055.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "56",
+            "suranameEng": "Al Waqiah",
+            "suranameArabic": "اَلْوَاقِعَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Waqiah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah56.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/056.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "57",
+            "suranameEng": "Al Hadid",
+            "suranameArabic": "اَلْحَدِيْد",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Hadid",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah57.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/057.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "58",
+            "suranameEng": "Al Mujadilah",
+            "suranameArabic": "اَلْمُجَادَلَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Mujadilah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah58.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/058.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "59",
+            "suranameEng": "Al Hashr",
+            "suranameArabic": "اَلْحَشْر",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Hashr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah59.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/059.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "60",
+            "suranameEng": "Al Mumtahanah",
+            "suranameArabic": "اَلْمُمْتَحِنَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Mumtahanah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah60.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/060.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "61",
+            "suranameEng": "As Saff",
+            "suranameArabic": "اَلصَّفّ",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "As Saff",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah61.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/061.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "62",
+            "suranameEng": "Al Juma",
+            "suranameArabic": "اَلْجُمُعَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Juma",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah62.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/062.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "63",
+            "suranameEng": "Al Munafiqun",
+            "suranameArabic": "اَلْمُنٰفِقُوْن",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Munafiqun",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah63.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/063.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "64",
+            "suranameEng": "At Taghabun",
+            "suranameArabic": "اَلتَّغَابُن",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "At Taghabun",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah64.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/064.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "65",
+            "suranameEng": "At Talaq",
+            "suranameArabic": "اَلطَّلَاق",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "At Talaq",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah65.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/065.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "66",
+            "suranameEng": "At Tahrim",
+            "suranameArabic": "اَلتَّحْرِيْم",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "At Tahrim",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah66.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/066.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "67",
+            "suranameEng": "Al Mulk",
+            "suranameArabic": "اَلْمُلْك",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Mulk",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah67.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/067.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "68",
+            "suranameEng": "Al Qalam",
+            "suranameArabic": "اَلْقَلَم",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qalam",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah68.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/068.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "69",
+            "suranameEng": "Al Haqqah",
+            "suranameArabic": "اَلْحَآ قَّة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Haqqah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah69.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/069.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "70",
+            "suranameEng": "Al Ma'arij",
+            "suranameArabic": "اَلْمَعَارِ ج",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ma'arij",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah70.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/070.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "71",
+            "suranameEng": "Nuh",
+            "suranameArabic": "نُوْ ح",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Nuh",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah71.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/071.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "72",
+            "suranameEng": "Al Jin",
+            "suranameArabic": "اَلْجِنّ",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Jin",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah72.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/072.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "73",
+            "suranameEng": "Al Muzzammil",
+            "suranameArabic": "اَلْمُزَّمِّل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Muzzammil",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah73.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/073.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "74",
+            "suranameEng": "Al Mudassir",
+            "suranameArabic": "اَلْمُدَّثِّر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Mudassir",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah74.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/074.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "75",
+            "suranameEng": "Al Qiyamah",
+            "suranameArabic": "اَلْقِيَامَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qiyamah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah75.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/075.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "76",
+            "suranameEng": "Al Insan",
+            "suranameArabic": "اَلدَّهْر (اَلْاِنْسَان)",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Insan",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah76.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/076.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "77",
+            "suranameEng": "Al Mursalat",
+            "suranameArabic": "اَلْمُرْسَلٰت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Mursalat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah77.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/077.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "78",
+            "suranameEng": "An Naba",
+            "suranameArabic": "اَلنَّبَا",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Naba",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah78.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/078.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "79",
+            "suranameEng": "An Naziat",
+            "suranameArabic": "اَلنَّازِعَات",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Naziat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah79.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/079.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "80",
+            "suranameEng": "Abasa",
+            "suranameArabic": "عَبَس",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Abasa",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah80.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/080.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "81",
+            "suranameEng": "At Takwir",
+            "suranameArabic": "اَلتَّكْوِيْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Takwir",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah81.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/081.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "82",
+            "suranameEng": "Al Infitar",
+            "suranameArabic": "اَلْاِنْفِطَار",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Infitar",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah82.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/082.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "83",
+            "suranameEng": "Al Mutaffifin",
+            "suranameArabic": "اَلْمُطَفِّفِيْن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Mutaffifin",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah83.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/083.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "84",
+            "suranameEng": "Al Inshiqaq",
+            "suranameArabic": "اَلْاِنْشِقَاق",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Inshiqaq",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah84.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/084.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "85",
+            "suranameEng": "Al Buruj",
+            "suranameArabic": "اَلْبُرُوْج",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Buruj",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah85.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/085.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "86",
+            "suranameEng": "At Tariq",
+            "suranameArabic": "اَلطَّارِق",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Tariq",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah86.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/086.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "87",
+            "suranameEng": "Al Ala",
+            "suranameArabic": "اَلْاَعْلٰی",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ala",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah87.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/087.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "88",
+            "suranameEng": "Al Ghashiyah",
+            "suranameArabic": "اَلْغَاشِيَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ghashiyah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah88.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/088.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "89",
+            "suranameEng": "Al Fajr",
+            "suranameArabic": "اَلْفَجْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Fajr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah89.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/089.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "90",
+            "suranameEng": "Al Balad",
+            "suranameArabic": "اَلْبَـلَد",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Balad",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah90.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/090.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "91",
+            "suranameEng": "Ash Shams",
+            "suranameArabic": "اَلشَّمْس",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ash Shams",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah91.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/091.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "92",
+            "suranameEng": "Al Lail",
+            "suranameArabic": "اَلَّيْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Lail",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah92.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/092.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "93",
+            "suranameEng": "Ad Duha",
+            "suranameArabic": "اَلْضُّحٰی",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Ad Duha",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah93.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/093.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "94",
+            "suranameEng": "Alam Nashrah",
+            "suranameArabic": "اَلَمْ نَشْرَ ح",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Alam Nashrah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah94.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/094.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "95",
+            "suranameEng": "At Tin",
+            "suranameArabic": "اَلتِّیْن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Tin",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah95.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/095.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "96",
+            "suranameEng": "Al Alaq",
+            "suranameArabic": "اَلْعَلَق",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Alaq",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah96.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/096.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "97",
+            "suranameEng": "Al Qadr",
+            "suranameArabic": "اَلْقَدْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qadr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah97.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/097.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "98",
+            "suranameEng": "Al Bayyinah",
+            "suranameArabic": "اَلْبَيِّنَة",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Bayyinah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah98.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/098.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "99",
+            "suranameEng": "Al Zalzalah",
+            "suranameArabic": "اَلزِّلْزَال",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "Al Zalzalah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah99.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/099.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "100",
+            "suranameEng": "Al Adiyat",
+            "suranameArabic": "اَلْعٰدِيٰت",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Adiyat",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah100.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/100.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "101",
+            "suranameEng": "Al Qariah",
+            "suranameArabic": "اَلْقَارِعَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Qariah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah101.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/101.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "102",
+            "suranameEng": "At Takasur",
+            "suranameArabic": "اَلتَّكَاثُر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "At Takasur",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah102.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/102.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "103",
+            "suranameEng": "Al Asr",
+            "suranameArabic": "اَلْعَصْر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Asr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah103.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/103.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "104",
+            "suranameEng": "Al Humazah",
+            "suranameArabic": "اَلْهُمَزَة",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Humazah",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah104.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/104.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "105",
+            "suranameEng": "Al Feel",
+            "suranameArabic": "اَلْفِيْل",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Feel",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah105.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/105.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "106",
+            "suranameEng": "Quraish",
+            "suranameArabic": "قُـرَيْش",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Quraish",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah106.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/106.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "107",
+            "suranameEng": "Al Maun",
+            "suranameArabic": "اَلْمَاعُوْن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Maun",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah107.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/107.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "108",
+            "suranameEng": "Al Kausar",
+            "suranameArabic": "اَلْـكَوْثَر",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Kausar",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah108.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/108.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "109",
+            "suranameEng": "Al Kafirun",
+            "suranameArabic": "اَلْكَافِرُوْن",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Kafirun",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah109.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/109.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "110",
+            "suranameEng": "An Nasr",
+            "suranameArabic": "اَلنَّصْر",
+            "imgSrc": "assets/img/quran/madina-img.ico",
+            "imgAlt": "An Nasr",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah110.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/110.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "111",
+            "suranameEng": "Al Lahab",
+            "suranameArabic": "اَللَّھَب",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Lahab",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah111.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/111.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "112",
+            "suranameEng": "Al Ikhlas",
+            "suranameArabic": "اَلْاِخْلَاص",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Ikhlas",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah112.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/112.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "113",
+            "suranameEng": "Al Falaq",
+            "suranameArabic": "اَلْفَلَق",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "Al Falaq",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah113.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/113.mp3",
+            "type":"surah"
+        },
+        {
+            "surahNumber": "114",
+            "suranameEng": "An Nas",
+            "suranameArabic": "اَلنَّاس",
+            "imgSrc": "assets/img/quran/makkah-img.ico",
+            "imgAlt": "An Nas",
+            "pdfUrl": "assets/quran/surah/alqurankarim/surah114.pdf",
+            "audioUrl": "assets/quran/surah/alqurankarim/114.mp3",
+            "type":"surah"
+        }
+    ],
+    "paras": [
+        {
+            "paraNumber": "1",
+            "paraName": "الٓمّٓ",
+            "pdfUrl": "assets/quran/para/alahazrat/para1.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para01.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "2",
+            "paraName": "سَیَقُوْلُ",
+            "pdfUrl": "assets/quran/para/alahazrat/para2.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para02.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "3",
+            "paraName": "تِلْكَ الرُّسُلُ",
+            "pdfUrl": "assets/quran/para/alahazrat/para3.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para03.mp3"
+            ,
+            "type":"para"
+        },
+        {
+            "paraNumber": "4",
+            "paraName": "لَنْ تَنَالُوا",
+            "pdfUrl": "assets/quran/para/alahazrat/para4.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para04.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "5",
+            "paraName": "وَالمُحْصَنٰتُ",
+            "pdfUrl": "assets/quran/para/alahazrat/para5.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para05.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "6",
+            "paraName": "لاَ يُحِبُّ اللّهُ",
+            "pdfUrl": "assets/quran/para/alahazrat/para6.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para06.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "7",
+            "paraName": "وَإِذَا سَمِعُوا",
+            "pdfUrl": "assets/quran/para/alahazrat/para7.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para07.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "8",
+            "paraName": "وَلَوْ أَنَّنَا",
+            "pdfUrl": "assets/quran/para/alahazrat/para8.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para08.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "9",
+            "paraName": "قَدْ أَفْلَحَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para9.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para09.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "10",
+            "paraName": "وَاعْلَمُوا",
+            "pdfUrl": "assets/quran/para/alahazrat/para10.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para10.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "11",
+            "paraName": "يَعْتَذِرُونَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para11.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para11.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "12",
+            "paraName": "وَمَا مِنْ دَآبَّةٍ",
+            "pdfUrl": "assets/quran/para/alahazrat/para12.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para12.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "13",
+            "paraName": "رُبَمَا",
+            "pdfUrl": "assets/quran/para/alahazrat/para13.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para13.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "14",
+            "paraName": "أَلَمْ تَرَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para14.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para14.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "15",
+            "paraName": "سُبْحَانَ الَّذِى",
+            "pdfUrl": "assets/quran/para/alahazrat/para15.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para15.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "16",
+            "paraName": "قَالَ أَلَمْ",
+            "pdfUrl": "assets/quran/para/alahazrat/para16.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para16.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "17",
+            "paraName": "اقْتَرَبَ لِلنَّاسِ",
+            "pdfUrl": "assets/quran/para/alahazrat/para17.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para17.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "18",
+            "paraName": "قَدْ أَفْلَحَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para18.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para18.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "19",
+            "paraName": "وَقَالَ الَّذِينَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para19.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para19.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "20",
+            "paraName": "أَمَّنْ خَلَقَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para20.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para20.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "21",
+            "paraName": "اتْلُ مَا",
+            "pdfUrl": "assets/quran/para/alahazrat/para21.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para21.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "22",
+            "paraName": "وَمَنْ يَقْنُتْ",
+            "pdfUrl": "assets/quran/para/alahazrat/para22.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para22.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "23",
+            "paraName": "وَمَآ أَنْزَلَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para23.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para23.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "24",
+            "paraName": "فَمَنْ أَظْلَمُ",
+            "pdfUrl": "assets/quran/para/alahazrat/para24.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para24.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "25",
+            "paraName": "إِلَيْهِ يُرَدُّ",
+            "pdfUrl": "assets/quran/para/alahazrat/para25.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para25.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "26",
+            "paraName": "حَمٓ",
+            "pdfUrl": "assets/quran/para/alahazrat/para26.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para26.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "27",
+            "paraName": "قَالَ فَمَا خَطْبُكُم",
+            "pdfUrl": "assets/quran/para/alahazrat/para27.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para27.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "28",
+            "paraName": "قَدْ أَفْلَحَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para28.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para28.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "29",
+            "paraName": "عَمَّ يَتَسَاءَلُونَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para29.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para29.mp3",
+            "type":"para"
+        },
+        {
+            "paraNumber": "30",
+            "paraName": "عَمَّ يَتَسَاءَلُونَ",
+            "pdfUrl": "assets/quran/para/alahazrat/para30.pdf",
+            "audioUrl": "assets/quran/para/alahazrat/para30.mp3",
+            "type":"para"
+        }
+    ],
+    "ddlPara": [
+        {
+            "value": 1,
+            "name": "1 - Alif-Laam-Meem - المّ"
+        },
+        {
+            "value": 2,
+            "name": "2 - Sayaqoolu - سيقول"
+        },
+        {
+            "value": 3,
+            "name": "3 - Tilkal Rusulu - تلك الرسل"
+        },
+        {
+            "value": 4,
+            "name": "4 - Lan Tanaalu - لن تنالو"
+        },
+        {
+            "value": 5,
+            "name": "5 - Wal Mohsanat - والمحسنات"
+        },
+        {
+            "value": 6,
+            "name": "6 - La Yuhibullah - لا يحب الله"
+        },
+        {
+            "value": 7,
+            "name": "7 - Wa Iza Samiu - وإذا سمعوا"
+        },
+        {
+            "value": 8,
+            "name": "8 - Wa Lau Annana - ولو أننا"
+        },
+        {
+            "value": 9,
+            "name": "9 - Qad Aflaha - قد أفلح"
+        },
+        {
+            "value": 10,
+            "name": "10 - Wa A'lamu - واعلموا"
+        },
+        {
+            "value": 11,
+            "name": "11 - Ya'tadhiruna - يعتذرون"
+        },
+        {
+            "value": 12,
+            "name": "12 - Wa Mamin Da'abba - وما من دابة"
+        },
+        {
+            "value": 13,
+            "name": "13 - Rubama - ربما"
+        },
+        {
+            "value": 14,
+            "name": "14 - Alam Taraa - ألم تر"
+        },
+        {
+            "value": 15,
+            "name": "15 - Subhanallazi - سبحان الذي"
+        },
+        {
+            "value": 16,
+            "name": "16 - Qal Alam - قال ألم"
+        },
+        {
+            "value": 17,
+            "name": "17 - Aqtarabat - اقتربت"
+        },
+        {
+            "value": 18,
+            "name": "18 - Qadd Aflaha - قد أفلح"
+        },
+        {
+            "value": 19,
+            "name": "19 - Wa Qalallazina - وقال الذين"
+        },
+        {
+            "value": 20,
+            "name": "20 - A'mman Khalaq - أمن خلق"
+        },
+        {
+            "value": 21,
+            "name": "21 - Utlu Ma - اتل ما"
+        },
+        {
+            "value": 22,
+            "name": "22 - Wa Manyaqnut - ومن يقنت"
+        },
+        {
+            "value": 23,
+            "name": "23 - Wama Anzalna - وما أنزلنا"
+        },
+        {
+            "value": 24,
+            "name": "24 - Faman Azlam - فمن أظلم"
+        },
+        {
+            "value": 25,
+            "name": "25 - Ilahe Yuraddu - إليه يرد"
+        },
+        {
+            "value": 2,
+            "name": "26 - Ha Meem - حم"
+        },
+        {
+            "value": 27,
+            "name": "27 - Qala Fama Khatbukum - قال فما خطبكم"
+        },
+        {
+            "value": 28,
+            "name": "28 - Qadd Aflaha - قد أفلح"
+        },
+        {
+            "value": 29,
+            "name": "29 - Amma Yatasa'alun - عم يتساءلون"
+        },
+        {
+            "value": 30,
+            "name": "30 - Amma Yatasa'alun - عم يتساءلون"
+        }
+    ],
+    "ddlSurah": [
+        {
+            "value": "1",
+            "name": "1 - Surah Al-Fatihah - الفاتحة"
+        },
+        {
+            "value": "2",
+            "name": "2 - Surah Al-Baqarah - البقرة"
+        },
+        {
+            "value": "3",
+            "name": "3 - Surah Aal-E-Imran - آل عمران"
+        },
+        {
+            "value": "4",
+            "name": "4 - Surah An-Nisa - النساء"
+        },
+        {
+            "value": "5",
+            "name": "5 - Surah Al-Maidah - المائدة"
+        },
+        {
+            "value": "6",
+            "name": "6 - Surah Al-Anam - الأنعام"
+        },
+        {
+            "value": "7",
+            "name": "7 - Surah Al-Araf - الأعراف"
+        },
+        {
+            "value": "8",
+            "name": "8 - Surah Al-Anfal - الأنفال"
+        },
+        {
+            "value": "9",
+            "name": "9 - Surah At-Tawbah - التوبة"
+        },
+        {
+            "value": "10",
+            "name": "10 - Surah Yunus - يونس"
+        },
+        {
+            "value": "11",
+            "name": "11 - Surah Hud - هود"
+        },
+        {
+            "value": "12",
+            "name": "12 - Surah Yusuf - يوسف"
+        },
+        {
+            "value": "13",
+            "name": "13 - Surah Ar-Rad - الرعد"
+        },
+        {
+            "value": "14",
+            "name": "14 - Surah Ibrahim - إبراهيم"
+        },
+        {
+            "value": "15",
+            "name": "15 - Surah Al-Hijr - الحجر"
+        },
+        {
+            "value": "16",
+            "name": "16 - Surah An-Nahl - النحل"
+        },
+        {
+            "value": "17",
+            "name": "17 - Surah Al-Isra - الإسراء"
+        },
+        {
+            "value": "18",
+            "name": "18 - Surah Al-Kahf - الكهف"
+        },
+        {
+            "value": "19",
+            "name": "19 - Surah Maryam - مريم"
+        },
+        {
+            "value": "20",
+            "name": "20 - Surah Ta-Ha - طه"
+        },
+        {
+            "value": "21",
+            "name": "21 - Surah Al-Anbiya - الأنبياء"
+        },
+        {
+            "value": "22",
+            "name": "22 - Surah Al-Hajj - الحج"
+        },
+        {
+            "value": "23",
+            "name": "23 - Surah Al-Muminun - المؤمنون"
+        },
+        {
+            "value": "24",
+            "name": "24 - Surah An-Nur - النور"
+        },
+        {
+            "value": "25",
+            "name": "25 - Surah Al-Furqan - الفرقان"
+        },
+        {
+            "value": "26",
+            "name": "26 - Surah Ash-Shuara - الشعراء"
+        },
+        {
+            "value": "27",
+            "name": "27 - Surah An-Naml - النمل"
+        },
+        {
+            "value": "28",
+            "name": "28 - Surah Al-Qasas - القصص"
+        },
+        {
+            "value": "29",
+            "name": "29 - Surah Al-Ankabut - العنكبوت"
+        },
+        {
+            "value": "30",
+            "name": "30 - Surah Ar-Rum - الروم"
+        },
+        {
+            "value": "31",
+            "name": "31 - Surah Luqman - لقمان"
+        },
+        {
+            "value": "32",
+            "name": "32 - Surah As-Sajda - السجدة"
+        },
+        {
+            "value": "33",
+            "name": "33 - Surah Al-Ahzab - الأحزاب"
+        },
+        {
+            "value": "34",
+            "name": "34 - Surah Saba - سبأ"
+        },
+        {
+            "value": "35",
+            "name": "35 - Surah Fatir - فاطر"
+        },
+        {
+            "value": "36",
+            "name": "36 - Surah Ya-Sin - يس"
+        },
+        {
+            "value": "37",
+            "name": "37 - Surah As-Saffat - الصافات"
+        },
+        {
+            "value": "38",
+            "name": "38 - Surah Sad - ص"
+        },
+        {
+            "value": "39",
+            "name": "39 - Surah Az-Zumar - الزمر"
+        },
+        {
+            "value": "40",
+            "name": "40 - Surah Ghafir - غافر"
+        },
+        {
+            "value": "41",
+            "name": "41 - Surah Fussilat - فصلت"
+        },
+        {
+            "value": "42",
+            "name": "42 - Surah Ash-Shura - الشورى"
+        },
+        {
+            "value": "43",
+            "name": "43 - Surah Az-Zukhruf - الزخرف"
+        },
+        {
+            "value": "44",
+            "name": "44 - Surah Ad-Dukhan - الدخان"
+        },
+        {
+            "value": "45",
+            "name": "45 - Surah Al-Jathiya - الجاثية"
+        },
+        {
+            "value": "46",
+            "name": "46 - Surah Al-Ahqaf - الأحقاف"
+        },
+        {
+            "value": "47",
+            "name": "47 - Surah Muhammad - محمد"
+        },
+        {
+            "value": "48",
+            "name": "48 - Surah Al-Fath - الفتح"
+        },
+        {
+            "value": "49",
+            "name": "49 - Surah Al-Hujurat - الحجرات"
+        },
+        {
+            "value": "50",
+            "name": "50 - Surah Qaf - ق"
+        },
+        {
+            "value": "51",
+            "name": "51 - Surah Adh-Dhariyat - الذاريات"
+        },
+        {
+            "value": "52",
+            "name": "52 - Surah At-Tur - الطور"
+        },
+        {
+            "value": "53",
+            "name": "53 - Surah An-Najm - النجم"
+        },
+        {
+            "value": "54",
+            "name": "54 - Surah Al-Qamar - القمر"
+        },
+        {
+            "value": "55",
+            "name": "55 - Surah Ar-Rahman - الرحمن"
+        },
+        {
+            "value": "56",
+            "name": "56 - Surah Al-Waqia - الواقعة"
+        },
+        {
+            "value": "57",
+            "name": "57 - Surah Al-Hadid - الحديد"
+        },
+        {
+            "value": "58",
+            "name": "58 - Surah Al-Mujadilah - المجادلة"
+        },
+        {
+            "value": "59",
+            "name": "59 - Surah Al-Hashr - الحشر"
+        },
+        {
+            "value": "60",
+            "name": "60 - Surah Al-Mumtahina - الممتحنة"
+        },
+        {
+            "value": "61",
+            "name": "61 - Surah As-Saff - الصف"
+        },
+        {
+            "value": "62",
+            "name": "62 - Surah Al-Jumuah - الجمعة"
+        },
+        {
+            "value": "63",
+            "name": "63 - Surah Al-Munafiqun - المنافقون"
+        },
+        {
+            "value": "64",
+            "name": "64 - Surah At-Taghabun - التغابن"
+        },
+        {
+            "value": "65",
+            "name": "65 - Surah At-Talaq - الطلاق"
+        },
+        {
+            "value": "66",
+            "name": "66 - Surah At-Tahrim - التحريم"
+        },
+        {
+            "value": "67",
+            "name": "67 - Surah Al-Mulk - الملك"
+        },
+        {
+            "value": "68",
+            "name": "68 - Surah Al-Qalam - القلم"
+        },
+        {
+            "value": "69",
+            "name": "69 - Surah Al-Haqqah - الحاقة"
+        },
+        {
+            "value": "70",
+            "name": "70 - Surah Al-Maarij - المعارج"
+        },
+        {
+            "value": "71",
+            "name": "71 - Surah Nuh - نوح"
+        },
+        {
+            "value": "72",
+            "name": "72 - Surah Al-Jinn - الجن"
+        },
+        {
+            "value": "73",
+            "name": "73 - Surah Al-Muzzammil - المزمل"
+        },
+        {
+            "value": "74",
+            "name": "74 - Surah Al-Muddaththir - المدثر"
+        },
+        {
+            "value": "75",
+            "name": "75 - Surah Al-Qiyamah - القيامة"
+        },
+        {
+            "value": "76",
+            "name": "76 - Surah Al-Insan - الانسان"
+        },
+        {
+            "value": "77",
+            "name": "77 - Surah Al-Mursalat - المرسلات"
+        },
+        {
+            "value": "78",
+            "name": "78 - Surah An-Naba - النبأ"
+        },
+        {
+            "value": "79",
+            "name": "79 - Surah An-Naziat - النازعات"
+        },
+        {
+            "value": "80",
+            "name": "80 - Surah Abasa - عبس"
+        },
+        {
+            "value": "81",
+            "name": "81 - Surah At-Takwir - التكوير"
+        },
+        {
+            "value": "82",
+            "name": "82 - Surah Al-Infitar - الانفطار"
+        },
+        {
+            "value": "83",
+            "name": "83 - Surah Al-Mutaffifin - المطففين"
+        },
+        {
+            "value": "84",
+            "name": "84 - Surah Al-Inshiqaq - الانشقاق"
+        },
+        {
+            "value": "85",
+            "name": "85 - Surah Al-Buruj - البروج"
+        },
+        {
+            "value": "86",
+            "name": "86 - Surah At-Tariq - الطارق"
+        },
+        {
+            "value": "87",
+            "name": "87 - Surah Al-Ala - الأعلى"
+        },
+        {
+            "value": "88",
+            "name": "88 - Surah Al-Ghashiya - الغاشية"
+        },
+        {
+            "value": "89",
+            "name": "89 - Surah Al-Fajr - الفجر"
+        },
+        {
+            "value": "90",
+            "name": "90 - Surah Al-Balad - البلد"
+        },
+        {
+            "value": "91",
+            "name": "91 - Surah Ash-Shams - الشمس"
+        },
+        {
+            "value": "92",
+            "name": "92 - Surah Al-Lail - الليل"
+        },
+        {
+            "value": "93",
+            "name": "93 - Surah Ad-Duhaa - الضحى"
+        },
+        {
+            "value": "94",
+            "name": "94 - Surah Ash-Sharh - الشرح"
+        },
+        {
+            "value": "95",
+            "name": "95 - Surah At-Tin - التين"
+        },
+        {
+            "value": "96",
+            "name": "96 - Surah Al-Alaq - العلق"
+        },
+        {
+            "value": "97",
+            "name": "97 - Surah Al-Qadr - القدر"
+        },
+        {
+            "value": "98",
+            "name": "98 - Surah Al-Bayyina - البينة"
+        },
+        {
+            "value": "99",
+            "name": "99 - Surah Az-Zalzalah - الزلزلة"
+        },
+        {
+            "value": "100",
+            "name": "100 - Surah Al-Adiyat - العاديات"
+        },
+        {
+            "value": "101",
+            "name": "101 - Surah Al-Qaria - القارعة"
+        },
+        {
+            "value": "102",
+            "name": "102 - Surah At-Takathur - التكاثر"
+        },
+        {
+            "value": "103",
+            "name": "103 - Surah Al-Asr - العصر"
+        },
+        {
+            "value": "104",
+            "name": "104 - Surah Al-Humazah - الهمزة"
+        },
+        {
+            "value": "105",
+            "name": "105 - Surah Al-Fil - الفيل"
+        },
+        {
+            "value": "106",
+            "name": "106 - Surah Quraish - قريش"
+        },
+        {
+            "value": "107",
+            "name": "107 - Surah Al-Maun - الماعون"
+        },
+        {
+            "value": "108",
+            "name": "108 - Surah Al-Kawthar - الكوثر"
+        },
+        {
+            "value": "109",
+            "name": "109 - Surah Al-Kafiroon - الكافرون"
+        },
+        {
+            "value": "110",
+            "name": "110 - Surah An-Nasr - النصر"
+        },
+        {
+            "value": "111",
+            "name": "111 - Surah Al-Masad - المسد"
+        },
+        {
+            "value": "112",
+            "name": "112 - Surah Al-Ikhlas - الإخلاص"
+        },
+        {
+            "value": "113",
+            "name": "113 - Surah Al-Falaq - الفلق"
+        },
+        {
+            "value": "114",
+            "name": "114 - Surah An-Nas - الناس"
+        }
+    ],
+    "ddlQari": [
+        {
+            "value": 1,
+            "name": "1 - Qari 01"
+        },
+        {
+            "value": 2,
+            "name": "2 - Qari 02"
+        }
+    ]
+}

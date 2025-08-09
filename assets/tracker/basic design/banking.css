@@ -1,0 +1,88 @@
+
+body {
+     font-size: 16px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    vertical-align: baseline;
+   
+    color: #444444;
+    font-weight: 400;
+}
+.bank-box {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .144);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.bank-box h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #3e3973;
+    text-align: center;
+}
+
+.bank-box .accordion-button {
+    box-shadow: none !important;
+    background-color: #ededed !important;
+    color: #333333 !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0px 0px 10px;
+    border-radius: 9px !important;
+}
+.bank-box .accordion-button::after {
+    color: #fff !important;
+}
+
+.bank-box .accordion-item {
+    border: none;
+}
+
+.bank-img {
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid #3e3973;
+    overflow: hidden;
+}
+.bank-img img {
+    width: 120px;
+}
+.content-text {
+    margin-top: 20px;
+    border-top: 1px solid;
+    padding: 15px;
+}
+.content-text .bank-text {
+    font-size: 16px;
+}
+.bank-card {
+    padding-top: 20px;
+    border-radius: 20px;
+    height: 100% !important;
+    flex: 1;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, .16) 0 3px 6px, rgba(0, 0, 0, .23) 0 3px 6px;
+}
+
+.content-text .title {
+    width: 40%;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #3e3973;
+}
+.content-text .text {
+    width: 60%;
+    text-align: left;
+    color: #000;
+}
+.content-text h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    font-weight: 700;
+    text-align: left;
+    
+}
