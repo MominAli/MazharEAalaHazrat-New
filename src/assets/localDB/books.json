@@ -185,5 +185,13 @@
     "img": "assets/books/FutuhaatAbulFatah/6.jpeg",
     "pdfPath": "assets/quran/surah1.pdf",
     "subBooks": []
+  },
+   {
+    "id": 13,
+    "title": "13 Tafheemul Munazra",
+    "hasChildren": false,
+    "img": "assets/books/13 Tafheemul Munazra/13 Tafheemul Munazra.PNG",
+    "pdfPath": "assets/quran/13 Tafheemul Munazra.pdf",
+    "subBooks": []
   }
 ]
