@@ -3,7 +3,7 @@
   --color-primary: #1976d2; /* Medium Blue */
   --color-secondary: #0d47a1; /* Deep Blue */
   --color-secondary-light: #e3f2fd; /* Light Blue */
-  --color-text: black; /* Dark Gray for readability */
+  --color-text: white; /* Dark Gray for readability */
   --color-text-muted: #757575; /* Muted Gray */
   --color-background: #ffffff; /* White Background */
   --color-highlight-bg: #e3f2fd; /* Light Blue Highlight */

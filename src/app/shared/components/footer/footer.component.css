@@ -3,7 +3,7 @@ footer {
     justify-content: center;
     padding: 5px;
     background: var(--gradient-primary);
-    color: var(--text-color);
+    color:var(--color-text);
     position: fixed;
     bottom: 0;
     width: 100%;
