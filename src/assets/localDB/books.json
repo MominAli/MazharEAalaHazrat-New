@@ -7,93 +7,93 @@
     "subBooks": [
       {
         "id": 101,
-        "title": "01 Muqadma",
-        "img": "assets/books/FutuhaatAbulFatah/1.jpeg",
-        "pdfPath": "assets/books/01 Muqadma.pdf",
+        "title": "01_Muqadma",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/1.jpeg",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/01_Muqadma.pdf",
          "hasChildren": false
       },
       {
         "id": 102,
-        "title": "02 Munazra Naunihal",
-        "img": "assets/books/FutuhaatAbulFatah/2.jpeg",
-        "pdfPath": "assets/books/02 Munazra Naunihal.pdf",
+        "title": "02_Munazra_Naunihal",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/02_Munazra_Naunihal.JPEG",
+        "pdfPath": "aassets/books/01_Futuhat_e_Abul_Fatah_Volume_1/02_Munazra_Naunihal.pdf",
          "hasChildren": false
       },
       {
         "id": 103,
         "title": "03 Munazra Punjab",
-        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
-        "pdfPath": "assets/books/03 Munazra Punjab.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/03_Munazra_Punjab.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/03_Munazra_Punjab.pdf",
          "hasChildren": false
       },
       {
         "id": 104,
         "title": "04 Munazra Lucknow",
-        "img": "assets/books/FutuhaatAbulFatah/4.jpeg",
-        "pdfPath": "assets/books/04 Munazra Lucknow.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/04_Munazra_Lucknow.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/04_Munazra_Lucknow.pdf",
          "hasChildren": false
       },
       {
         "id": 105,
         "title": "05 Munazra Mumbai Vol 1",
-        "img": "assets/books/FutuhaatAbulFatah/5.jpeg",
-        "pdfPath": "assets/books/05 Munazra Mumbai Vol 1.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/05_Munazra_Mumbai_Vol_1.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/05_Munazra_Mumbai_Vol_1.pdf",
          "hasChildren": false
       },
       {
         "id": 106,
         "title": "06 Munazra Padra Vol 1",
-        "img": "assets/books/FutuhaatAbulFatah/6.jpeg",
-        "pdfPath": "assets/books/06 Munazra Padra Vol 1.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/06_Munazra_Padra_Vol_1.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/06_Munazra_Padra_Vol_1.pdf",
          "hasChildren": false
       },
       {
         "id": 107,
         "title": "07 Munazra Rander",
-        "img": "assets/books/FutuhaatAbulFatah/7.jpeg",
-        "pdfPath": "assets/books/07 Munazra Rander.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/07_Munazra_Rander.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/07_Munazra_Rander.pdf",
          "hasChildren": false
       },
       {
         "id": 108,
         "title": "08 Munazra Padra Vol 2",
-        "img": "assets/books/FutuhaatAbulFatah/8.jpeg",
-        "pdfPath": "assets/books/08 Munazra Padra Vol 2.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/08_Munazra_Padra_Vol_2.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/08_Munazra_Padra_Vol_2.pdf",
          "hasChildren": false
       },
       {
         "id": 109,
         "title": "09 Munazra Malegaon",
-        "img": "assets/books/FutuhaatAbulFatah/9.jpeg",
-        "pdfPath": "assets/books/09 Munazra Malegaon.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/09_Munazra_Malegaon.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/09_Munazra_Malegaon.pdf",
          "hasChildren": false
       },
       {
         "id": 110,
         "title": "10 Munazra Mumbai Vol 2",
-        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
-        "pdfPath": "assets/books/10 Munazra Mumbai Vol 2.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/10_Munazra_Mumbai_Vol_2.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/10_Munazra_Mumbai_Vol_2.pdf",
          "hasChildren": false
       },
       {
         "id": 111,
         "title": "11 Munazra Shambhal",
-        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
-        "pdfPath": "assets/books/11 Munazra Shambhal.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/11_Munazra_Shambhal.JPEG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/11_Munazra_Shambhal.pdf",
          "hasChildren": false
       },
       {
         "id": 112,
         "title": "12 Munazra Rangoon & Mandlay Vol 1",
-        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
-        "pdfPath": "assets/books/12 Munazra Rangoon & Mandlay Vol 1.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/12_Munazra_Rangoon_Mandlay_Vol_1.JPG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/12_Munazra_Rangoon_Mandlay_Vol_1.pdf",
          "hasChildren": false
       },
       {
         "id": 113,
         "title": "13 Munazra Rangoon & Mandlay Vol 2",
-        "img": "assets/books/FutuhaatAbulFatah/3.jpeg",
-        "pdfPath": "assets/books/13 Munazra Rangoon & Mandlay Vol 2.pdf",
+        "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/13_Munazra_Rangoon_2.JPG",
+        "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/13_Munazra_Rangoon_2.pdf",
          "hasChildren": false
       }
     ]
@@ -102,7 +102,7 @@
     "id": 2,
     "title": "02_Ajmalu_Anware_Raza",
     "hasChildren": false,
-    "img": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.PNG",
+    "img": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.JPG",
     "pdfPath": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.pdf",
     "subBooks": []
   },
@@ -111,7 +111,7 @@
     "title": "03_Barelviyat_ke_parde_mai_wahabiyat_Hindi",
     "hasChildren": false,
     "img": "assets/books/03_Barelviyat_ke_parde_mai_wahabiyat_Hindi/03_Barelviyat_ke_parde_mai_wahabiyat_Hindi.PNG",
-    "pdfPath": "assets/books/01 Muqadma.pdf",
+    "pdfPath": "assets/books/03_Barelviyat_ke_parde_mai_wahabiyat_Hindi/03_Barelviyat_ke_parde_mai_wahabiyat_Hindi.pdf",
     "subBooks": []
   },
   {
