@@ -43,8 +43,8 @@
 .card-bg { background: linear-gradient(to right, #e3f2fd, #f1f8e9); }
 
 .btn-them {
-    background-color: var(--button-bg);
-    color: var(--bg-color);
+    background-color: green;
+    color: white;
     border: none;
     border-radius: 30px;
     font-weight: 600;
