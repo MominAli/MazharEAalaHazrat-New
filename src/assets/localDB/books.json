@@ -99,14 +99,6 @@
     ]
   },
   {
-    "id": 2,
-    "title": "AjmalO Anware Raza",
-    "hasChildren": false,
-    "img": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.jpeg",
-    "pdfPath": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.pdf",
-    "subBooks": []
-  },
-  {
     "id": 3,
     "title": "03_Barelviyat_ke_parde_mai_wahabiyat_Hindi",
     "hasChildren": false,
@@ -152,14 +144,6 @@
     "hasChildren": false,
     "img": "assets/books/08_Mamoolaat_Ahl_e_sunnat/08_Mamoolaat_Ahl_e_sunnat.png",
     "pdfPath": "assets/books/08_Mamoolaat_Ahl_e_sunnat/08_Mamoolaat_Ahl_e_sunnat.pdf",
-    "subBooks": []
-  },
-  {
-    "id": 9,
-    "title": "Mazahire haq Al’ajla",
-    "hasChildren": false,
-    "img": "assets/books/09_Mazahiril_Haq_Alajla/09_Mazahiril_Haq_Alajla.png",
-    "pdfPath": "assets/books/09_Mazahiril_Haq_Alajla/09_Mazahiril_Haq_Alajla.pdf",
     "subBooks": []
   },
   {
