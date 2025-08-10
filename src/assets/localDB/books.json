@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Futhwate E Abulfatah",
+    "title": "Futuhaat E AbulFataha",
     "hasChildren": true,
     "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/01_main_cover.PNG",
     "subBooks": [
       {
         "id": 101,
-        "title": "01_Muqadma",
+        "title": "Muqadma Wa Fahrist",
         "img": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/1.jpeg",
         "pdfPath": "assets/books/01_Futuhat_e_Abul_Fatah_Volume_1/01_Muqadma.pdf",
          "hasChildren": false
@@ -100,7 +100,7 @@
   },
   {
     "id": 2,
-    "title": "02_Ajmalu_Anware_Raza",
+    "title": "AjmalO Anware Raza",
     "hasChildren": false,
     "img": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.jpeg",
     "pdfPath": "assets/books/02_Ajmalu_Anware_Raza/02_Ajmalu_Anware_Raza.pdf",
@@ -156,7 +156,7 @@
   },
   {
     "id": 9,
-    "title": "09_Mazahiril_Haq_Alajla",
+    "title": "Mazahire haq Al’ajla",
     "hasChildren": false,
     "img": "assets/books/09_Mazahiril_Haq_Alajla/09_Mazahiril_Haq_Alajla.png",
     "pdfPath": "assets/books/09_Mazahiril_Haq_Alajla/09_Mazahiril_Haq_Alajla.pdf",
