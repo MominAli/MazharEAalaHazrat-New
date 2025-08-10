@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1754815445942,
+  "timestamp": 1754835331337,
   "index": "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico",
         "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
-        "https://MominAli.github.io/MazharEAalaHazrat-New/main-MYHJ3DTI.js",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/main-UMPCCIGL.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest",
         "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css"
@@ -1029,7 +1029,7 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/BackupDB/quran.json": "64b225f98bdf87a5b1c1cdaf6e34f3ef79325e9d",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/about.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/activity.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/books.json": "ee68269dadb87b6f536e4a52ea985f95ead2396c",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/books.json": "803ac4a54b5ddc64a9e875e0e97b4a0845d8acdf",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/contact.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/home.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/media.json": "851e08aa82332cb616a764201af8b19bcbae64c5",
@@ -1439,8 +1439,8 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.min.mjs": "a88f11b404874626e06f65d0f2ffa991c41fa3e0",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.mjs": "3ec1170461caf853165d1f7bc27227e58ac867b6",
     "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico": "9ae63671b86ed8569f384a044f706c6e736859ff",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "873f7505e70b9d663ac791715f6246ab511cd4c6",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/main-MYHJ3DTI.js": "d981decb5139f38efcf05a31353feb3ee5f45c51",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "13724e8528bdd32bd49a6f60a1ebf3efb79e4132",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/main-UMPCCIGL.js": "3a41b81c61655c6184bad233e20bf68e3a1e83b2",
     "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest": "605dfc89b1c053da2014a31b2816dfb196e3d3bc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css": "52611319651f8cb1632308695f3791748bf0aeda"
