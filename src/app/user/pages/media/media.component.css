@@ -53,15 +53,17 @@
   color: var(--color-primary);
   margin: var(--spacing-margin-xs) auto 0;
   text-transform: var(--text-transform-capitalize);
+  line-height: var(--line-height-base);
+  word-break: break-word;
+  text-align: center;
+
+  /* Allow wrapping and limit to 2 lines */
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: var(--line-height-base);
-  height: calc(var(--font-size-sm) * 2.5);
-  word-break: break-word;
 }
+
 
 /* ============================= */
 /* 📱 MOBILE MENU */

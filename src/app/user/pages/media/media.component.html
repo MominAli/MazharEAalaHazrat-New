@@ -49,34 +49,27 @@
                     No media available in this category.
                   </div>
 
-              <ng-container *ngIf="isOnline">
-  <div class="row">
-    <div
-      *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
-      class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center grid-item my-2 px-2"
-    >
-      <!-- Entire card is a link -->
-      <a
-        [href]="'https://www.youtube.com/watch?v=' + extractVideoId(item.url)"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-decoration-none text-dark d-block h-100"
-      >
-        <div class="media-card p-2 border rounded shadow-sm h-100">
-          <!-- Thumbnail Image -->
-          <img
-            [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
-            class="img-fluid w-100 rounded"
-            alt="Video thumbnail"
-          />
+                  <ng-container *ngIf="isOnline">
+                    <div class="row">
+                      <div
+                        *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
+                        class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center grid-item my-2 px-2">
+                        <!-- Entire card is a link -->
+                        <a [href]="'https://www.youtube.com/watch?v=' + extractVideoId(item.url)" target="_blank"
+                          rel="noopener noreferrer" class="text-decoration-none text-dark d-block h-100">
+                          <div class="media-card p-2 border rounded shadow-sm h-100">
+                            <!-- Thumbnail Image -->
+                            <img [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
+                              class="img-fluid w-100 rounded" alt="Video thumbnail" />
 
-          <!-- Video Title -->
-          <p class="media-name mt-2 font-weight-bold text-truncate">{{ item.name }}</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</ng-container>
+                            <!-- Video Title -->
+                            <p class="media-name mt-2 font-weight-bold">{{ item.name }}</p>
+                          </div>
+
+                        </a>
+                      </div>
+                    </div>
+                  </ng-container>
 
 
                 </div>

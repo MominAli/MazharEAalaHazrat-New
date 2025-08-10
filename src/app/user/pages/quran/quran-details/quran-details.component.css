@@ -151,7 +151,7 @@
 
 .bottom-btn a {
   color: var(--color-text);
-  background-color: #008b8b; /* Consider defining --color-accent if reused */
+  background-color: var(--color-primary); /* Consider defining --color-accent if reused */
   width: 100%;
   padding: var(--spacing-padding-sm) var(--spacing-padding-xs);
   border-radius: var(--radius-sm) var(--radius-md);
@@ -201,3 +201,10 @@
     width: 70px;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 120px;
+  }
+}
+
