@@ -11,8 +11,8 @@
   --color-breadcrumb-overlay: #f5f5f5; /* Light Gray Overlay */
 
   /* 🌈 GRADIENTS */
-  --gradient-primary: linear-gradient(to right, #e3f2fd, #f1f8e9); 
-  --gradient-card-bg: linear-gradient(to right, #f5faff, #e3f2fd);
+  --gradient-primary: linear-gradient(to right, #316f9b, #250ed1); 
+  --gradient-card-bg: linear-gradient(to right, #837bce, #439edf);
   --gradient-tab-bg: linear-gradient(to top right, #ffffff 50%, #f1f1f1 50%);
   --gradient-overlay-light: radial-gradient(circle, rgba(33, 150, 243, 0.1) 0%, transparent 70%);
 

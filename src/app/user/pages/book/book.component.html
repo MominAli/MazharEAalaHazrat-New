@@ -1,67 +1,75 @@
 <app-loader [loading]="loading"></app-loader>
 <div *ngIf="!loading">
-    <app-hero-banner [title]="'Books Library'" [subtitle]="'Explore, read, and download your favorite books'">
-    </app-hero-banner>
+  <app-hero-banner
+    [title]="'Books Library'"
+    [subtitle]="'Explore, read, and download your favorite books'"
+  ></app-hero-banner>
 
-    <div class="container">
-        <!-- Book Grid -->
+  <div class="container">
+    <!-- 🔍 Search Box -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search-box my-3 search-container">
+          <input type="text" class="form-control" placeholder="Search books..." />
+          <button class="search-btn" id="searchBtn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="search-box my-3 search-container">
-                    <input type="text" class="form-control" placeholder="Search books..." />
-                    <button class="search-btn" id="searchBtn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+    <!-- 📚 Book Grid -->
+    <div class="row">
+      <div
+        *ngFor="let item of books | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
+        class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2"
+      >
+        <div class="card book-card" tabindex="0">
+          <div class="card-img-wrapper">
+            <img
+              [src]="item.img"
+              [alt]="item.title || 'Book Image'"
+              loading="lazy"
+              class="card-img-top"
+              (click)="navigateToBook(item)"
+              style="cursor: pointer;"
+            />
+          </div>
+
+          <div class="card-body">
+            <h5 class="text-truncate" [attr.title]="item.title">{{ item.title }}</h5>
+            <div class="d-flex justify-content-between mt-3 flex-wrap gap-2">
+              <button class="btn btn-sm" *ngIf="item.hasChildren" (click)="navigateToBook(item)">
+                <i class="fas fa-layer-group fa-fw"></i> View Volumes
+              </button>
+
+              <button class="btn btn-sm" *ngIf="!item.hasChildren" (click)="navigateToBook(item)">
+                <i class="fas fa-book-open fa-fw"></i> Read
+              </button>
+
+              <button
+                class="btn btn-success btn-sm"
+                *ngIf="!item.hasChildren && item.pdfPath"
+                (click)="downloadPDF(item.pdfPath, item.title)"
+              >
+                <i class="fas fa-file-pdf fa-fw"></i> Download
+              </button>
             </div>
-        </div>
-      <div class="row">
-  <div
-    *ngFor="let item of books | paginate: { id: 'content-pagination', itemsPerPage: itemsPerPage, currentPage: currentPage }"
-    class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 text-center my-3 px-2"
-  >
-    <div class="card book-card" tabindex="0">
-      <div class="card-img-wrapper">
-        <!-- Image click navigates to appropriate route -->
-        <img
-          [src]="item.img"
-          [alt]="item.title || 'Book Image'"
-          loading="lazy"
-          class="card-img-top"
-          (click)="navigateToBook(item)"
-          style="cursor: pointer;"
-        />
-      </div>
-
-      <div class="card-body">
-        <h5 class="text-truncate" [attr.title]="item.title">{{ item.title }}</h5>
-        <div class="d-flex justify-content-between mt-3 flex-wrap gap-2">
-          <button class="btn btn-sm" *ngIf="item.hasChildren" (click)="navigateToBook(item)">
-            <i class="fas fa-layer-group fa-fw"></i> View Volumes
-          </button>
-
-          <button class="btn btn-read btn-sm" *ngIf="!item.hasChildren" (click)="navigateToBook(item)">
-            <i class="fas fa-book-open fa-fw"></i> Read
-          </button>
-
-            <button class="btn btn-success btn-sm" *ngIf="!item.hasChildren && item.pdfPath"
-              (click)="downloadPDF(item.pdfPath, item.title)">
-              <i class="fas fa-file-pdf fa-fw"></i> Download
-            </button>
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- 📄 Pagination -->
+    <div class="pagination-wrapper mt-4 d-flex justify-content-center">
+      <pagination-controls
+        id="content-pagination"
+        (pageChange)="currentPage = $event"
+        class="pagination"
+        previousLabel="Previous"
+        nextLabel="Next"
+      ></pagination-controls>
     </div>
   </div>
-</div>
-
-
-        <!-- Pagination -->
-        <div class="pagination-wrapper mt-4 d-flex justify-content-center">
-            <pagination-controls id="content-pagination" (pageChange)="currentPage = $event" class="pagination"
-                previousLabel="Pervious" nextLabel="Next">
-            </pagination-controls>
-        </div>
-    </div>
 </div>
 <app-footer></app-footer>
