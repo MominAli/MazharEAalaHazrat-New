@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  ViewChild,OnInit
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -29,7 +34,7 @@ export class MediaComponent implements OnInit {
   totalCategories = 0;
   mobileTabsVisible = false;
   loading = true;
-
+  @ViewChild('menuWrapper') menuWrapper!: ElementRef;
   constructor(
     private mediadetailsService: MediadetailsService,
     private sanitizer: DomSanitizer
@@ -78,14 +83,29 @@ export class MediaComponent implements OnInit {
     return initialized;
   }
 
-  changeTab(index: number): void {
+  changeTab(index: number) {
     this.activeTab = index;
-    this.mobileTabsVisible = false;
+    this.mobileTabsVisible = false; // Optional: auto-close on selection
   }
 
-  toggleMenu(): void {
+ toggleMenu() {
     this.mobileTabsVisible = !this.mobileTabsVisible;
   }
+   onToggleClick(event: MouseEvent) {
+    event.stopPropagation(); // Prevents document click from firing
+    this.toggleMenu();
+  }
+   @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const isMobile = window.innerWidth <= 768;
+    const clickedInside = this.menuWrapper?.nativeElement.contains(event.target);
+
+    if (isMobile && !clickedInside && this.mobileTabsVisible) {
+      this.mobileTabsVisible = false;
+    }
+  }
+
+  
 
   // sanitizeUrl(url: string): SafeResourceUrl {
   //   const embedUrl = url.includes('watch?v=') ? url.replace('watch?v=', 'embed/') : url;

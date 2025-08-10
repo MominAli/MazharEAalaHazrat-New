@@ -193,3 +193,18 @@
     left: 0;
   }
 }
+
+.mobile-tabs {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.mobile-tabs.show {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .mobile-tabs {
+    display: block !important;
+  }
+}

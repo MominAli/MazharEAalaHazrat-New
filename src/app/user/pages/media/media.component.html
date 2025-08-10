@@ -9,21 +9,23 @@
       <div class="tabs-wrapper">
         <div class="row">
           <!-- Category Tabs -->
-          <div class="col-md-4">
-            <h2 class="menu-toggle text-primary" (click)="toggleMenu()">Categories</h2>
-            <div class="mobile-tabs" [class.show]="mobileTabsVisible">
-              <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
-              <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
-              <ul class="nav nav-tabs media-list flex-column">
-                <li *ngFor="let category of categories; let i = index" class="nav-item">
-                  <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">
-                    {{ category.label }}
-                  </a>
-                </li>
-              </ul>
+          <div class="tabs-wrapper row" #menuWrapper>
+            <div class="col-md-4">
+              <div class="menu-container">
+                <h2 class="menu-toggle text-primary" (click)="onToggleClick($event)">Categories</h2>
+                <div class="mobile-tabs" [class.show]="mobileTabsVisible">
+                  <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
+                  <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
+                  <ul class="nav nav-tabs media-list flex-column">
+                    <li *ngFor="let category of categories; let i = index" class="nav-item">
+                      <a class="nav-link" [class.active]="i === activeTab" (click)="changeTab(i)">
+                        {{ category.label }}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-
           <!-- Content Section -->
           <div class="col-md-8">
             <div class="search-box my-3 search-container">
