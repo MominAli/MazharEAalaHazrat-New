@@ -25,19 +25,18 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BookComponent {
   searchQuery = '';
-  mobileTabsVisible = false;
   itemsPerPage: number = 12;
   currentPage: number = 1;
   loading: boolean = true;
 
   books: any[] = [];
+  filteredBooks: any[] = [];
 
   constructor(
     private bookdetailsService: BookdetailsService,
     private router: Router,
     private http: HttpClient
-
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.loading = true;
@@ -46,6 +45,7 @@ export class BookComponent {
     this.bookdetailsService.getBookList().subscribe({
       next: (data) => {
         this.books = data;
+        this.filteredBooks = data;
         this.loading = false;
         console.info(`Books loaded: ${data.length} items`);
       },
@@ -55,6 +55,15 @@ export class BookComponent {
       }
     });
   }
+
+  filterBooks(): void {
+    const query = this.searchQuery.trim().toLowerCase();
+    this.filteredBooks = this.books.filter(book =>
+      book.title?.toLowerCase().includes(query)
+    );
+    this.currentPage = 1;
+  }
+
   downloadPDF(pdfPath: string, title: string): void {
     this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
       next: (blob) => this.triggerDownload(blob, `${title}.pdf`),
@@ -74,9 +83,6 @@ export class BookComponent {
     URL.revokeObjectURL(url);
   }
 
-  /**
-   * Unified navigation method for both sub-books and book details
-   */
   navigateToBook(item: any): void {
     if (!item.hasChildren) {
       this.router.navigate(['/book-details', item.id]);
@@ -85,4 +91,3 @@ export class BookComponent {
     }
   }
 }
-
