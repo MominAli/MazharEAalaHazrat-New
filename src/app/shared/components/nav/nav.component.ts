@@ -1,4 +1,4 @@
-import { Component, HostListener, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
@@ -10,7 +10,6 @@ import { AccountService } from '../../../admin/services/account.service';
 import { HasRoleDirective } from '../../../shared/directives/has-role.directive';
 import { RegisterComponent } from '../../../admin/pages/register/register.component';
 import { MediadetailsService } from '../../../user/services/mediadetails.service';
-
 
 
 @Component({
@@ -35,11 +34,21 @@ export class NavComponent {
   private mediadetailsService = inject(MediadetailsService);
 
   currentTheme: 'light' | 'dark' = 'light';
-  
-
   model: Record<string, any> = {};
   registerMode = false;
   isNavbarCollapsed = true;
+
+  @ViewChild('navbarWrapper') navbarWrapper!: ElementRef;
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const isMobile = window.innerWidth <= 768;
+    const clickedInside = this.navbarWrapper?.nativeElement.contains(event.target);
+
+    if (isMobile && !clickedInside && !this.isNavbarCollapsed) {
+      this.isNavbarCollapsed = true;
+    }
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
@@ -85,9 +94,8 @@ export class NavComponent {
     this.isNavbarCollapsed = true;
   }
 
-   toggleTheme() {
+  toggleTheme(): void {
     this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
     this.mediadetailsService.switchTheme(this.currentTheme);
   }
-
 }
