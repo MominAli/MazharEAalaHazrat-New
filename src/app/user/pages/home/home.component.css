@@ -1,68 +1,81 @@
+/* ============================= */
+/* 💬 FEEDBACK & DONATION SECTION */
+/* ============================= */
 .feedback-donation-section {
-    margin-top: 20px;
-    background-color:var(--color-background);
-    border-radius: 15px;
+  margin-top: var(--spacing-margin-sm);
+  background-color: var(--color-background);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-light);
 }
 
-.feedback, .donation {
-    padding: 30px 20px;
-    text-align: center;
+.feedback,
+.donation {
+  padding: var(--spacing-padding-xl) var(--spacing-padding-md);
+  text-align: center;
 }
 
-.feedback h6, .donation h6 {
-    font-size: 20px;
-    font-weight: 900;
-    color:var(--color-primary);
-    margin-bottom: 10px;
+.feedback h6,
+.donation h6 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-black);
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-gap-sm);
 }
 
-.feedback p, .donation p {
-    font-size: 16px;
-    line-height: 22px;
-    color:var(--color-text-muted);
+.feedback p,
+.donation p {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+  color: var(--color-text-muted);
 }
 
-.feed-anch, .donate-anch {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
+.feed-anch,
+.donate-anch {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
 }
 
-.feedback-btn, .donation-btn {
-    background-color: var(--color-primary);
-    color: var(--color-text);
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 6px 0;
-    width: 100%;
-    cursor: pointer;
+/* ============================= */
+/* 🎯 BUTTONS */
+/* ============================= */
+.feedback-btn,
+.donation-btn {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  padding: var(--spacing-padding-xs) 0;
+  width: 100%;
+  cursor: pointer;
+  transition: var(--transition-default);
 }
-
-
 
 .btn-them {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-weight: 600;
-    cursor: pointer;
-        padding-bottom: 6px;
+  background-color: green; /* Consider replacing with a theme variable */
+  color: var(--color-text);
+  border: none;
+  border-radius: var(--radius-pill);
+  font-weight: var(--font-weight-semibold);
+  padding-bottom: var(--spacing-padding-xs);
+  cursor: pointer;
 }
 
-/* Responsive Adjustments */
+/* ============================= */
+/* 📱 RESPONSIVE ADJUSTMENTS */
+/* ============================= */
 @media screen and (max-width: 767px) {
-    .feedback, .donation {
-        padding: 20px 10px;
-    }
+  .feedback,
+  .donation {
+    padding: var(--spacing-padding-md) var(--spacing-padding-sm);
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .feedback-btn, .donation-btn {
-        font-size: 14px;
-    }
+  .feedback-btn,
+  .donation-btn {
+    font-size: var(--font-size-sm);
+  }
 }
-
-

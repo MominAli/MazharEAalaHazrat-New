@@ -2,19 +2,19 @@
 /* 📖 BIOGRAPHY BOX */
 /* ============================= */
 .biography-box {
-  box-shadow: 0 0 15px var(--secondary-color);
-  border-radius: 10px;
-  padding: 20px;
+  box-shadow: 0 0 var(--spacing-gap-md) var(--color-secondary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-padding-md);
   overflow: hidden;
 }
 
 .biography-box h2 {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--primary-color);
+  font-size: var(--font-size-display-md);
+  text-transform: var(--text-transform-uppercase);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-margin-sm);
 }
 
 /* ============================= */
@@ -25,17 +25,17 @@
 }
 
 .biography-box .accordion-button {
-  background-color: var(--light-secondary-color);
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-bottom: 10px;
-  border-radius: 9px;
-  box-shadow: none;
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  text-transform: var(--text-transform-uppercase);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-gap-sm);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-none);
 }
 
 .biography-box .accordion-button::after {
-  color: var(--bg-color);
+  color: var(--color-background);
 }
 
 /* ============================= */
@@ -44,8 +44,8 @@
 .biography-img {
   width: fit-content;
   margin: 0 auto;
-  border-radius: 20px;
-  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-primary);
   overflow: hidden;
 }
 
@@ -58,9 +58,9 @@
 /* 📝 BIOGRAPHY CARD */
 /* ============================= */
 .biography-card {
-  padding-top: 20px;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+  padding-top: var(--spacing-padding-md);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-medium);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -70,35 +70,34 @@
 /* 📄 CONTENT TEXT */
 /* ============================= */
 .content-text {
-  margin-top: 20px;
-  border-top: 1px solid var(--secondary-color);
-  padding: 15px;
+  margin-top: var(--spacing-margin-sm);
+  border-top: 1px solid var(--color-secondary);
+  padding: var(--spacing-padding-sm);
 }
 
 .content-text .biography-text {
-  font-size: 16px;
-  color: var(--text-color);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
 }
 
 .content-text h2 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  font-weight: 700;
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-gap-sm);
+  font-weight: var(--font-weight-bold);
   display: flex;
   text-align: left;
-  color: var(--text-color);
+  color: var(--color-text);
 }
 
 .content-text .title {
   width: 40%;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   white-space: nowrap;
-  color: var(--text-color);
+  color: var(--color-text);
 }
 
 .content-text .text {
   width: 60%;
   text-align: left;
-  color: var(--text-color);
+  color: var(--color-text);
 }
-
