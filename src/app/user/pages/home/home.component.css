@@ -6,9 +6,9 @@
 }
 
 .text-gold {
-  color: var(--color-highlight-border); /* #64b5f6 */
   letter-spacing: var(--letter-spacing-wide); /* 0.03125rem */
   text-transform: var(--text-transform-uppercase); /* uppercase */
+  font-weight: 90;
 }
 
 .presentation-wrapper h4 {
