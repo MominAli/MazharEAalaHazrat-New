@@ -8,6 +8,8 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 import { HttpClient } from '@angular/common/http';
 
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
 @Component({
   selector: 'app-sub-book',
   standalone: true,
@@ -16,7 +18,8 @@ import { HttpClient } from '@angular/common/http';
     CommonModule,
     HeroBannerComponent,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatSnackBarModule
   ],
   templateUrl: './sub-book.component.html',
   styleUrl: './sub-book.component.css'
@@ -29,12 +32,14 @@ export class SubBookComponent {
 
  subBook: any[] = [];
   parentTitle: string = 'Books Library';
+  downloading: boolean = false;
 
   constructor(
     private bookdetailsService: BookdetailsService,
     private router: Router,
     private route: ActivatedRoute,
-    private http: HttpClient
+    private http: HttpClient,
+      private snackBar: MatSnackBar // ✅ Inject here
   ) {}
 
   ngOnInit(): void {
@@ -65,14 +70,23 @@ export class SubBookComponent {
 
   }
 downloadPDF(pdfPath: string, title: string): void {
+  this.downloading = true;
+  this.snackBar.open(`Downloading "${title}"...`, 'Close', { duration: 3000 });
+
   this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
-    next: (blob) => this.triggerDownload(blob, `${title}.pdf`),
+    next: (blob) => {
+      this.triggerDownload(blob, `${title}.pdf`);
+      this.snackBar.open(`"${title}" downloaded successfully!`, 'Close', { duration: 3000 });
+      this.downloading = false;
+    },
     error: (err) => {
       console.error('Download failed:', err);
-      alert('Sorry, this PDF could not be downloaded.');
+      this.snackBar.open(`Failed to download "${title}".`, 'Close', { duration: 4000 });
+      this.downloading = false;
     }
   });
 }
+
 
 private triggerDownload(blob: Blob, filename: string, mimeType = 'application/pdf'): void {
   const url = URL.createObjectURL(new Blob([blob], { type: mimeType }));

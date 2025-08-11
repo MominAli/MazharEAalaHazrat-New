@@ -8,6 +8,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 import { HttpClient } from '@angular/common/http';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-book',
@@ -18,7 +19,8 @@ import { HttpClient } from '@angular/common/http';
     FooterComponent,
     CommonModule,
     FormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatSnackBarModule
   ],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
@@ -28,6 +30,7 @@ export class BookComponent {
   itemsPerPage: number = 8;
   currentPage: number = 1;
   loading: boolean = true;
+  downloading: boolean = false;
 
   books: any[] = [];
   filteredBooks: any[] = [];
@@ -35,7 +38,8 @@ export class BookComponent {
   constructor(
     private bookdetailsService: BookdetailsService,
     private router: Router,
-    private http: HttpClient
+    private http: HttpClient,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit(): void {
@@ -65,11 +69,19 @@ export class BookComponent {
   }
 
   downloadPDF(pdfPath: string, title: string): void {
+    this.downloading = true;
+    this.snackBar.open(`Downloading "${title}"...`, 'Close', { duration: 3000 });
+
     this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
-      next: (blob) => this.triggerDownload(blob, `${title}.pdf`),
+      next: (blob) => {
+        this.triggerDownload(blob, `${title}.pdf`);
+        this.snackBar.open(`"${title}" downloaded successfully!`, 'Close', { duration: 3000 });
+        this.downloading = false;
+      },
       error: (err) => {
         console.error('Download failed:', err);
-        alert('Sorry, this PDF could not be downloaded.');
+        this.snackBar.open(`Failed to download "${title}".`, 'Close', { duration: 4000 });
+        this.downloading = false;
       }
     });
   }

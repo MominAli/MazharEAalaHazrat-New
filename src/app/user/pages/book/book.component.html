@@ -16,7 +16,7 @@
             placeholder="Search books..."
             [(ngModel)]="searchQuery"
             (input)="filterBooks()" />
-          <button class="search-btn"   (click)="filterBooks()">
+          <button class="search-btn" (click)="filterBooks()">
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -65,8 +65,10 @@
               <button
                 class="btn btn-success btn-sm"
                 *ngIf="!item.hasChildren && item.pdfPath"
+                [disabled]="downloading"
                 (click)="downloadPDF(item.pdfPath, item.title)">
-                <i class="fas fa-file-pdf fa-fw"></i> Download
+                <i class="fas fa-file-pdf fa-fw"></i>
+                {{ downloading ? 'Downloading...' : 'Download' }}
               </button>
             </div>
           </div>

@@ -194,3 +194,9 @@
     max-height: 180px;
   }
 }
+
+.custom-snackbar {
+  background-color:var(--color-primary);
+  color:var(--color-text);
+  font-weight: 500;
+}
