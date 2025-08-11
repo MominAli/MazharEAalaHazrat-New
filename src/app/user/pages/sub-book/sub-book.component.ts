@@ -33,6 +33,7 @@ export class SubBookComponent {
  subBook: any[] = [];
   parentTitle: string = 'Books Library';
   downloading: boolean = false;
+downloadingMap: { [title: string]: boolean } = {};
 
   constructor(
     private bookdetailsService: BookdetailsService,
@@ -83,6 +84,9 @@ downloadPDF(pdfPath: string, title: string): void {
       console.error('Download failed:', err);
       this.snackBar.open(`Failed to download "${title}".`, 'Close', { duration: 4000 });
       this.downloading = false;
+    },
+   complete: () => {
+      this.downloadingMap[title] = false;
     }
   });
 }

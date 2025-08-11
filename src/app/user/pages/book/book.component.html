@@ -63,13 +63,15 @@
               </button>
 
               <button
-                class="btn btn-success btn-sm"
-                *ngIf="!item.hasChildren && item.pdfPath"
-                [disabled]="downloading"
-                (click)="downloadPDF(item.pdfPath, item.title)">
-                <i class="fas fa-file-pdf fa-fw"></i>
-                {{ downloading ? 'Downloading...' : 'Download' }}
-              </button>
+  class="btn btn-success btn-sm"
+  *ngIf="!item.hasChildren && item.pdfPath"
+  [disabled]="downloadingMap[item.title]"
+  (click)="downloadPDF(item.pdfPath, item.title)">
+  <i class="fas fa-file-pdf fa-fw"></i>
+  {{ downloadingMap[item.title] ? 'Downloading...' : 'Download' }}
+</button>
+
+
             </div>
           </div>
         </div>

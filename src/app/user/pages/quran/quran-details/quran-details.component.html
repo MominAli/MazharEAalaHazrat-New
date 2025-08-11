@@ -1,4 +1,4 @@
-<app-loader [loading]="loading"></app-loader>
+<app-loader [loading]="loading"  *ngIf="isDownloading"></app-loader>
 <div *ngIf="!loading">
     <section>
         <div class="container">

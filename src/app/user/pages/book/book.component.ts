@@ -31,9 +31,10 @@ export class BookComponent {
   currentPage: number = 1;
   loading: boolean = true;
   downloading: boolean = false;
-
+downloadingMap: { [title: string]: boolean } = {};
   books: any[] = [];
   filteredBooks: any[] = [];
+
 
   constructor(
     private bookdetailsService: BookdetailsService,
@@ -68,23 +69,36 @@ export class BookComponent {
     this.currentPage = 1;
   }
 
-  downloadPDF(pdfPath: string, title: string): void {
-    this.downloading = true;
-    this.snackBar.open(`Downloading "${title}"...`, 'Close', { duration: 3000 });
+ downloadPDF(pdfPath: string, title: string): void {
+  this.downloadingMap[title] = true;
 
-    this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
-      next: (blob) => {
-        this.triggerDownload(blob, `${title}.pdf`);
-        this.snackBar.open(`"${title}" downloaded successfully!`, 'Close', { duration: 3000 });
-        this.downloading = false;
-      },
-      error: (err) => {
-        console.error('Download failed:', err);
-        this.snackBar.open(`Failed to download "${title}".`, 'Close', { duration: 4000 });
-        this.downloading = false;
-      }
-    });
-  }
+  // Show toast: respectful and clear
+  this.snackBar.open(`Preparing download for "${title}"...`, 'Close', {
+    duration: 3000,
+    panelClass: ['mat-snack-bar-info']
+  });
+
+  this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
+    next: (blob) => {
+      this.triggerDownload(blob, `${title}.pdf`);
+      this.snackBar.open(`"${title}" downloaded successfully.`, 'Close', {
+        duration: 3000,
+        panelClass: ['mat-snack-bar-success']
+      });
+    },
+    error: (err) => {
+      console.error(`Download failed for "${title}":`, err);
+      this.snackBar.open(`Unable to download "${title}". Please try again.`, 'Close', {
+        duration: 4000,
+        panelClass: ['mat-snack-bar-error']
+      });
+    },
+    complete: () => {
+      this.downloadingMap[title] = false;
+    }
+  });
+}
+
 
   private triggerDownload(blob: Blob, filename: string, mimeType = 'application/pdf'): void {
     const url = URL.createObjectURL(new Blob([blob], { type: mimeType }));

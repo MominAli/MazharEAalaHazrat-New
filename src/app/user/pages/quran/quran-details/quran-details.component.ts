@@ -10,7 +10,9 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { LoaderComponent } from '../../../../shared/components/loader/loader.component';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { HeroBannerComponent } from '../../../../shared/components/hero-banner/hero-banner.component';
-import { MatSnackBar } from '@angular/material/snack-bar';
+
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-quran-details',
@@ -23,7 +25,9 @@ import { MatSnackBar } from '@angular/material/snack-bar';
     NgxExtendedPdfViewerModule,
     LoaderComponent,
     FooterComponent,
-    HeroBannerComponent
+    HeroBannerComponent,
+    MatSnackBarModule
+
   ],
   templateUrl: './quran-details.component.html',
   styleUrl: './quran-details.component.css'
@@ -42,6 +46,10 @@ export class QuranDetailsComponent implements OnInit {
 
   loading: boolean = true;
   public isMobile: boolean = window.innerWidth < 768;
+
+   downloading: boolean = false;
+downloadingMap: { [title: string]: boolean } = {};
+isDownloading: boolean = false;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
@@ -117,10 +125,14 @@ export class QuranDetailsComponent implements OnInit {
     this.selectedPara = '';
   }
 
-  download(type: 'pdf' | 'audio'): void {
+download(type: 'pdf' | 'audio'): void {
     const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
 
     if (!url) {
+      this.snackBar.open(`${type.toUpperCase()} file not available.`, 'Close', {
+        duration: 3000,
+        panelClass: ['mat-snack-bar-error']
+      });
       console.warn(`${type.toUpperCase()} URL is missing.`);
       return;
     }
@@ -132,18 +144,43 @@ export class QuranDetailsComponent implements OnInit {
       filename = `surah${this.selectedSurah.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
     }
 
+    this.isDownloading = true;
+
+    this.snackBar.open(`Preparing ${type.toUpperCase()} download...`, 'Close', {
+      duration: 4000,
+      panelClass: ['mat-snack-bar-info']
+    });
+
     this.http.get(url, { responseType: 'blob' }).subscribe({
-      next: (blob) => this.triggerDownload(blob, filename),
-      error: (err) => console.error(`${type.toUpperCase()} download failed:`, err)
+      next: (blob) => {
+        this.triggerDownload(blob, filename);
+        this.snackBar.open(`${type.toUpperCase()} downloaded successfully.`, 'Close', {
+          duration: 3000,
+          panelClass: ['mat-snack-bar-success']
+        });
+      },
+      error: (err) => {
+        console.error(`${type.toUpperCase()} download failed:`, err);
+        this.snackBar.open(`Download failed. Check your connection.`, 'Retry', {
+          duration: 6000,
+          panelClass: ['mat-snack-bar-error']
+        }).onAction().subscribe(() => {
+          this.download(type); // Retry
+        });
+      },
+      complete: () => {
+        this.isDownloading = false;
+      }
     });
   }
 
-  private triggerDownload(blob: Blob, filename: string): void {
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    a.click();
+
+   private triggerDownload(blob: Blob, filename: string): void {
+    const url = URL.createObjectURL(new Blob([blob]));
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = filename;
+    anchor.click();
     URL.revokeObjectURL(url);
   }
 }
