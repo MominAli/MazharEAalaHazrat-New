@@ -13,6 +13,11 @@
             <div class="col-md-4">
               <div class="menu-container">
                 <h2 class="menu-toggle text-primary" (click)="onToggleClick($event)">Select Categories</h2>
+                   <p
+                  class="selected-category-name d-md-none mb-2 ms-2 px-3 py-2 border-start border-3 rounded-start text-primary fw-semibold bg-light d-flex align-items-center shadow-sm">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>
+                  {{ categories[activeTab]?.label }}
+                </p>
                 <div class="mobile-tabs" [class.show]="mobileTabsVisible">
                   <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
                   <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
@@ -29,8 +34,8 @@
           <!-- Content Section -->
           <div class="col-md-8">
      <div class="search-box my-3 search-container d-flex align-items-center">
-  <!-- Search Input -->
-  <input
+
+           <input
     #searchInput
     type="text"
     class="form-control flex-grow-1"
@@ -38,12 +43,11 @@
     [ngModel]="searchQuery"
     (ngModelChange)="searchSubject.next($event)"
   />
-
-  <!-- Search Icon Button -->
+           <!-- Search Icon Button -->
   <button class="btn btn-primary ml-2" id="searchBtn" type="button">
     <i class="fas fa-search"></i>
   </button>
-
+  
   <!-- Clear Button -->
   <button
     *ngIf="searchQuery"
@@ -54,6 +58,11 @@
   >
     <i class="fas fa-times"></i>
   </button>
+        </div>
+
+
+ 
+
 </div>
 
 
