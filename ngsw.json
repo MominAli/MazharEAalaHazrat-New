@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1754928491767,
+  "timestamp": 1754945301744,
   "index": "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico",
         "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
-        "https://MominAli.github.io/MazharEAalaHazrat-New/main-EFAMBOFY.js",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/main-6WCICBTZ.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest",
         "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css"
@@ -750,6 +750,7 @@
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/tab2.zip",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/logo banner and events image for website.docx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/translation-abulfatah-arbic-hindi-urdu-eng.xlsx",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Task Tracker v1.0.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$task tracker.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/user.png",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700-es5.mjs",
@@ -1056,7 +1057,7 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/BackupDB/quran.json": "64b225f98bdf87a5b1c1cdaf6e34f3ef79325e9d",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/about.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/activity.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/books.json": "5b8001df12817916887fd11608fe0e1117fad913",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/books.json": "b4032bfd213ae90c3a39c0c7a586e1198f77a775",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/contact.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/home.json": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/localDB/media.json": "851e08aa82332cb616a764201af8b19bcbae64c5",
@@ -1461,7 +1462,7 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/List of Naats.xlsx": "289f139da8be601f33ea5d82e922b39b7ec5707f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Bug Tracker  v1.0.xlsx": "07a6997226ce47b4d7877786991cec79e98b5efc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Business Requirement_v1.0.docx": "b4680e302c761a4583b08a26453f6500b7b9ba84",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "5543dacf9572f751aeaee4fb0825f5c1dc038b01",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "c8bd866d0b8dd3c5e6d88dbb14a67eefaddeba07",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/Tab.html": "95aaf06c60849dfe50274286a9f7a2e6779d00fa",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/banking.css": "57855b037b8a376f54e355177f87889fc925f285",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/banking.html": "f305d11faad4874bdca2cc4801e3b74a3396ea60",
@@ -1483,14 +1484,15 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/tab2.zip": "dd7817d9858ddb29443bc51ff2142930e6da1019",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/logo banner and events image for website.docx": "34aac92acdb38c8c9eef071aa0c39cfc13a26fab",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/translation-abulfatah-arbic-hindi-urdu-eng.xlsx": "120fee4e33ec217b666aac71687adf31e9f46472",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "a40e442edd2924ebdf014497a7af720815b25f9f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$task tracker.xlsx": "a40e442edd2924ebdf014497a7af720815b25f9f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/user.png": "f8e897fbf6ccda288d7982d9e85b6399d88cc91f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700-es5.mjs": "35c8e0874bf27141e075d38c0e8d37b901b4d1c1",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.min.mjs": "a88f11b404874626e06f65d0f2ffa991c41fa3e0",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.mjs": "3ec1170461caf853165d1f7bc27227e58ac867b6",
     "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico": "9ae63671b86ed8569f384a044f706c6e736859ff",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "d2a79344d0874bb05e897630e985c4da3de2805c",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/main-EFAMBOFY.js": "bb563c81be845aeb5c03a92a4dafceb31f327b1f",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "c97704c6c030eda4339352bb52963faffdd299bf",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/main-6WCICBTZ.js": "84876227bd4904a2732a9ac66a2edc72d5566fc7",
     "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest": "605dfc89b1c053da2014a31b2816dfb196e3d3bc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css": "52611319651f8cb1632308695f3791748bf0aeda"
