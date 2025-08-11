@@ -34,35 +34,17 @@
           <!-- Content Section -->
           <div class="col-md-8">
      <div class="search-box my-3 search-container d-flex align-items-center">
-
-           <input
+  <!-- Search Input -->
+  <input
     #searchInput
     type="text"
     class="form-control flex-grow-1"
     placeholder="Search media..."
     [ngModel]="searchQuery"
     (ngModelChange)="searchSubject.next($event)"
-  />
-           <!-- Search Icon Button -->
-  <button class="btn btn-primary ml-2" id="searchBtn" type="button">
+  /> <button class="btn search-btn" id="searchBtn" type="button">
     <i class="fas fa-search"></i>
   </button>
-  
-  <!-- Clear Button -->
-  <button
-    *ngIf="searchQuery"
-    class="btn btn-outline-secondary ml-2"
-    type="button"
-    (click)="clearSearch()"
-    aria-label="Clear search"
-  >
-    <i class="fas fa-times"></i>
-  </button>
-        </div>
-
-
- 
-
 </div>
 
 
