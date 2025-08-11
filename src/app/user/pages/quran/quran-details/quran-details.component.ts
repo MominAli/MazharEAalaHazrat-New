@@ -2,7 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin } from 'rxjs';
-import {ddlPara,ddlSurah,ddlQari,QuranStateService,Surah,Para } from '../../../services/quran-state.service';
+import { ddlPara, ddlSurah, ddlQari, QuranStateService, Surah, Para } from '../../../services/quran-state.service';
 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -47,9 +47,9 @@ export class QuranDetailsComponent implements OnInit {
   loading: boolean = true;
   public isMobile: boolean = window.innerWidth < 768;
 
-   downloading: boolean = false;
-downloadingMap: { [title: string]: boolean } = {};
-isDownloading: boolean = false;
+  downloading: boolean = false;
+  downloadingMap: { [title: string]: boolean } = {};
+  isDownloading: boolean = false;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
@@ -114,6 +114,8 @@ isDownloading: boolean = false;
       this.selectedPara = selected.paraNumber.toString();
     }
     this.selectedSurah = '';
+    this.loadDropdownsAndLists();
+
   }
   onSurahChange(event: any): void {
     const selected = this.surahLists.find(s => s.surahNumber === event.target.value);
@@ -123,9 +125,14 @@ isDownloading: boolean = false;
       this.selectedSurah = selected.surahNumber.toString();
     }
     this.selectedPara = '';
+    this.loadDropdownsAndLists();
   }
-
-download(type: 'pdf' | 'audio'): void {
+refreshPage(): void {
+  this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+    this.router.navigate([this.router.url]);
+  });
+}
+  download(type: 'pdf' | 'audio'): void {
     const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
 
     if (!url) {
@@ -175,7 +182,7 @@ download(type: 'pdf' | 'audio'): void {
   }
 
 
-   private triggerDownload(blob: Blob, filename: string): void {
+  private triggerDownload(blob: Blob, filename: string): void {
     const url = URL.createObjectURL(new Blob([blob]));
     const anchor = document.createElement('a');
     anchor.href = url;
