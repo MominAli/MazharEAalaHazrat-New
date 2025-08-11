@@ -13,6 +13,15 @@
             <div class="col-md-4">
               <div class="menu-container">
                 <h2 class="menu-toggle text-primary" (click)="onToggleClick($event)">Select Categories</h2>
+
+                <!-- Selected category label (mobile only) -->
+                <p
+                  class="selected-category-name d-md-none mb-2 ms-2 px-3 py-2 border-start border-3 rounded-start text-primary fw-semibold bg-light d-flex align-items-center shadow-sm">
+                  <i class="fas fa-check-circle me-2 text-primary"></i>
+                  {{ categories[activeTab]?.label }}
+                </p>
+
+
                 <div class="mobile-tabs" [class.show]="mobileTabsVisible">
                   <h2 class="categories-title d-xl-none d-lg-none m-0">Categories</h2>
                   <p class="category-count my-0 m-2 p-0 text-primary">{{ totalCategories }} Categories</p>
@@ -26,90 +35,79 @@
                 </div>
               </div>
             </div>
-          <!-- Content Section -->
-          <div class="col-md-8">
-     <div class="search-box my-3 search-container d-flex align-items-center">
-  <!-- Search Input -->
-  <input
-    #searchInput
-    type="text"
-    class="form-control flex-grow-1"
-    placeholder="Search media..."
-    [ngModel]="searchQuery"
-    (ngModelChange)="searchSubject.next($event)"
-  />
+            <!-- Content Section -->
+            <div class="col-md-8">
+              <div class="search-box my-3 search-container d-flex align-items-center">
+                <!-- Search Input -->
+                <input #searchInput type="text" class="form-control flex-grow-1" placeholder="Search media..."
+                  [ngModel]="searchQuery" (ngModelChange)="searchSubject.next($event)" />
 
-  <!-- Search Icon Button -->
-  <button class="btn btn-primary ml-2" id="searchBtn" type="button">
-    <i class="fas fa-search"></i>
-  </button>
+                <!-- Search Icon Button -->
+                <button class="btn btn-primary ml-2" id="searchBtn" type="button">
+                  <i class="fas fa-search"></i>
+                </button>
 
-  <!-- Clear Button -->
-  <button
-    *ngIf="searchQuery"
-    class="btn btn-outline-secondary ml-2"
-    type="button"
-    (click)="clearSearch()"
-    aria-label="Clear search"
-  >
-    <i class="fas fa-times"></i>
-  </button>
-</div>
+                <!-- Clear Button -->
+                <button *ngIf="searchQuery" class="btn btn-outline-secondary ml-2" type="button" (click)="clearSearch()"
+                  aria-label="Clear search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
 
 
-            <div class="tabs-content">
-              <div *ngFor="let category of categories; let i = index" class="tab-pane fade"
-                [class.show]="i === activeTab" [class.active]="i === activeTab" [hidden]="i !== activeTab">
-                <div class="row">
-                  <!-- Offline Message -->
-                  <div *ngIf="!isOnline" class="text-center w-100 text-muted py-5">
-                    You are currently offline. Media content is unavailable.
-                  </div>
-
-                  <!-- No Media Message -->
-                  <div *ngIf="isOnline && filteredTabContent[category.label]?.length === 0"
-                    class="text-center w-100 text-muted py-5">
-                    No media available in this category.
-                  </div>
-
-                  <ng-container *ngIf="isOnline">
-                    <div class="row">
-                      <div
-                        *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
-                        class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center grid-item my-2 px-2">
-                        <!-- Entire card is a link -->
-                        <a [href]="'https://www.youtube.com/watch?v=' + extractVideoId(item.url)" target="_blank"
-                          rel="noopener noreferrer" class="text-decoration-none text-dark d-block h-100">
-                          <div class="media-card p-2 border rounded shadow-sm h-100">
-                            <!-- Thumbnail Image -->
-                            <img [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
-                              class="img-fluid w-100 rounded" alt="Video thumbnail" />
-
-                            <!-- Video Title -->
-                            <p class="media-name mt-2 font-weight-bold">{{ item.name }}</p>
-                          </div>
-
-                        </a>
-                      </div>
+              <div class="tabs-content">
+                <div *ngFor="let category of categories; let i = index" class="tab-pane fade"
+                  [class.show]="i === activeTab" [class.active]="i === activeTab" [hidden]="i !== activeTab">
+                  <div class="row">
+                    <!-- Offline Message -->
+                    <div *ngIf="!isOnline" class="text-center w-100 text-muted py-5">
+                      You are currently offline. Media content is unavailable.
                     </div>
-                  </ng-container>
+
+                    <!-- No Media Message -->
+                    <div *ngIf="isOnline && filteredTabContent[category.label]?.length === 0"
+                      class="text-center w-100 text-muted py-5">
+                      No media available in this category.
+                    </div>
+
+                    <ng-container *ngIf="isOnline">
+                      <div class="row">
+                        <div
+                          *ngFor="let item of filteredTabContent[category.label] | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPages[category.label], id: category.label }"
+                          class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center grid-item my-2 px-2">
+                          <!-- Entire card is a link -->
+                          <a [href]="'https://www.youtube.com/watch?v=' + extractVideoId(item.url)" target="_blank"
+                            rel="noopener noreferrer" class="text-decoration-none text-dark d-block h-100">
+                            <div class="media-card p-2 border rounded shadow-sm h-100">
+                              <!-- Thumbnail Image -->
+                              <img [src]="'https://img.youtube.com/vi/' + extractVideoId(item.url) + '/hqdefault.jpg'"
+                                class="img-fluid w-100 rounded" alt="Video thumbnail" />
+
+                              <!-- Video Title -->
+                              <p class="media-name mt-2 font-weight-bold">{{ item.name }}</p>
+                            </div>
+
+                          </a>
+                        </div>
+                      </div>
+                    </ng-container>
 
 
-                </div>
+                  </div>
 
 
 
-                <div class="text-center mt-3 overpagination">
-                  <pagination-controls id="{{ category.label }}" (pageChange)="onPageChange($event)" [responsive]="true"
-                    previousLabel="Previous" nextLabel="Next">
-                  </pagination-controls>
+                  <div class="text-center mt-3 overpagination">
+                    <pagination-controls id="{{ category.label }}" (pageChange)="onPageChange($event)"
+                      [responsive]="true" previousLabel="Previous" nextLabel="Next">
+                    </pagination-controls>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <app-footer></app-footer>
     </div>
-    <app-footer></app-footer>
   </div>
-</div>

@@ -207,4 +207,7 @@
     padding-bottom: 120px;
   }
 }
+.action-button {
+  text-decoration: none;
+}
 
