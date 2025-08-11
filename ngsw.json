@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1754845010177,
+  "timestamp": 1754902504130,
   "index": "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico",
         "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
-        "https://MominAli.github.io/MazharEAalaHazrat-New/main-5AN4JLBQ.js",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/main-5R44PVGP.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest",
         "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css"
@@ -702,6 +702,7 @@
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/A Short Biography Of Mazhar E Aalahazrat Abul Fatah Allama Hashmat Ali Khan Qadri RadiAllahu Ta.docx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Donation Page.docx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/List of Naats.xlsx",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Bug Tracker  v1.0.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Business Requirement_v1.0.docx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Task Tracker v1.0.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/Tab.html",
@@ -725,6 +726,8 @@
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/tab2.zip",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/logo banner and events image for website.docx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/translation-abulfatah-arbic-hindi-urdu-eng.xlsx",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Bug Tracker  v1.0.xlsx",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Task Tracker v1.0.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$task tracker.xlsx",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/user.png",
         "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700-es5.mjs",
@@ -1410,8 +1413,9 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/A Short Biography Of Mazhar E Aalahazrat Abul Fatah Allama Hashmat Ali Khan Qadri RadiAllahu Ta.docx": "5112afbf3996fe682278ad0843300bbd1ecf9c02",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Donation Page.docx": "4817ec62c2a35838a2e7da4a10ceb499461ff547",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/List of Naats.xlsx": "289f139da8be601f33ea5d82e922b39b7ec5707f",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Bug Tracker  v1.0.xlsx": "07a6997226ce47b4d7877786991cec79e98b5efc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Business Requirement_v1.0.docx": "b4680e302c761a4583b08a26453f6500b7b9ba84",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "05951df396e1622e4dd696f1c10b8e6f79131a7b",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "43d8e24e058e0c0e1cfe49a9e8bcdd8a18f8fa76",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/Tab.html": "95aaf06c60849dfe50274286a9f7a2e6779d00fa",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/banking.css": "57855b037b8a376f54e355177f87889fc925f285",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/banking.html": "f305d11faad4874bdca2cc4801e3b74a3396ea60",
@@ -1433,14 +1437,16 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/basic design/tab2.zip": "dd7817d9858ddb29443bc51ff2142930e6da1019",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/logo banner and events image for website.docx": "34aac92acdb38c8c9eef071aa0c39cfc13a26fab",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/translation-abulfatah-arbic-hindi-urdu-eng.xlsx": "120fee4e33ec217b666aac71687adf31e9f46472",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Bug Tracker  v1.0.xlsx": "a40e442edd2924ebdf014497a7af720815b25f9f",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$Mazhar E Aala Hazrat Task Tracker v1.0.xlsx": "a40e442edd2924ebdf014497a7af720815b25f9f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/tracker/~$task tracker.xlsx": "a40e442edd2924ebdf014497a7af720815b25f9f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/user.png": "f8e897fbf6ccda288d7982d9e85b6399d88cc91f",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700-es5.mjs": "35c8e0874bf27141e075d38c0e8d37b901b4d1c1",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.min.mjs": "a88f11b404874626e06f65d0f2ffa991c41fa3e0",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.mjs": "3ec1170461caf853165d1f7bc27227e58ac867b6",
     "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico": "9ae63671b86ed8569f384a044f706c6e736859ff",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "5a1e86f2f9ed368e16573519448cd23a4f418554",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/main-5AN4JLBQ.js": "77cdcfec01fdddeadf43a4f5518184551f370d17",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "72af85e270c03a9269d37e1a0e58dabe404a8d50",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/main-5R44PVGP.js": "05b55b64bcf8b0a3a6a4625a3d88adeb826046a0",
     "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest": "605dfc89b1c053da2014a31b2816dfb196e3d3bc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css": "52611319651f8cb1632308695f3791748bf0aeda"
