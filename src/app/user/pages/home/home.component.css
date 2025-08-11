@@ -1,3 +1,30 @@
+.presentation-wrapper {
+  background: var(--color-background); /* #ffffff */
+  border: 2px solid var(--color-highlight-border); /* #64b5f6 */
+  font-family: var(--font-family-ui); /* 'Segoe UI', Roboto, sans-serif */
+  line-height: var(--line-height-loose); /* 1.8 */
+}
+
+.text-gold {
+  color: var(--color-highlight-border); /* #64b5f6 */
+  letter-spacing: var(--letter-spacing-wide); /* 0.03125rem */
+  text-transform: var(--text-transform-uppercase); /* uppercase */
+}
+
+.presentation-wrapper h4 {
+  font-size: var(--font-size-xl); /* 1.25rem */
+}
+
+.presentation-wrapper p {
+  font-size: var(--font-size-md); /* 1rem */
+}
+
+.presentation-wrapper em {
+  font-style: italic;
+  color: var(--color-text-muted); /* #757575 */
+}
+
+
 /* ============================= */
 /* 💬 FEEDBACK & DONATION SECTION */
 /* ============================= */
