@@ -14,6 +14,7 @@ import { FooterComponent } from '../../../shared/components/footer/footer.compon
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 import { MediadetailsService } from '../../services/mediadetails.service';
 import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
+import { debounceTime, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-media',
@@ -35,6 +36,8 @@ export class MediaComponent implements OnInit {
   mobileTabsVisible = false;
   loading = true;
   @ViewChild('menuWrapper') menuWrapper!: ElementRef;
+  @ViewChild('searchInput') searchInput!: ElementRef;
+searchSubject = new Subject<string>();
   constructor(
     private mediadetailsService: MediadetailsService,
     private sanitizer: DomSanitizer
@@ -63,9 +66,21 @@ export class MediaComponent implements OnInit {
     });
         window.addEventListener('online', () => this.isOnline = true);
     window.addEventListener('offline', () => this.isOnline = false);
+
+     this.searchSubject.pipe(debounceTime(300)).subscribe(query => {
+    this.searchQuery = query;
+    this.filterResults();
+  });
   }
    isOnline: boolean = navigator.onLine;
-
+ngAfterViewInit(): void {
+  if (window.innerWidth < 768) {
+    this.searchInput.nativeElement.focus();
+  }
+}clearSearch(): void {
+  this.searchQuery = '';
+  this.filterResults();
+}
 
   ngOnDestroy() {
     window.removeEventListener('online', () => this.isOnline = true);
@@ -123,16 +138,21 @@ export class MediaComponent implements OnInit {
     return match ? match[1] : '';
   }
 
-  filterResults(): void {
-    const query = this.searchQuery.toLowerCase();
-    this.filteredTabContent = {};
+ filterResults(): void {
+  const query = this.searchQuery.toLowerCase();
+  this.filteredTabContent = {};
 
-    for (const label in this.tabContent) {
-      this.filteredTabContent[label] = this.tabContent[label].filter(item =>
-        item.name.toLowerCase().includes(query)
-      );
-    }
+  for (const label in this.tabContent) {
+    const fullList = this.tabContent[label]; // full unpaginated list
+    this.filteredTabContent[label] = fullList.filter(item =>
+      item.name.toLowerCase().includes(query)
+    );
+
+    // Reset to page 1 for filtered results
+    this.currentPages[label] = 1;
   }
+}
+
 
   onPageChange(page: number): void {
     const activeLabel = this.categories[this.activeTab]?.label;

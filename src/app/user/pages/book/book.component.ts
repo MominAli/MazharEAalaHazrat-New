@@ -25,7 +25,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BookComponent {
   searchQuery = '';
-  itemsPerPage: number = 12;
+  itemsPerPage: number = 8;
   currentPage: number = 1;
   loading: boolean = true;
 
