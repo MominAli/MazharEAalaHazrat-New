@@ -28,9 +28,8 @@
           <img [src]="item.img" [alt]="item.title || 'Book Image'" loading="lazy" class="card-img-top" />
         </div>
         <div class="card-body">
-          <h5 class="text-truncate" [attr.title]="item.title">
-            {{ item.title }}
-          </h5>
+            <h5 class="fs-6 fs-md-5 text-wrap" [attr.title]="item.title">{{ item.title }}</h5>
+
           <div class="d-flex justify-content-between mt-3">
             <button class="btn btn-outline-dark btn-sm" *ngIf="!item.hasChildren" (click)="navigateToBook(item)">
               Read

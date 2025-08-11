@@ -29,7 +29,8 @@
           </div>
 
           <div class="card-body">
-            <h5 class="text-truncate" [attr.title]="item.title">{{ item.title }}</h5>
+            <!-- <h5  class="text-wrap" [attr.title]="item.title">{{ item.title }}</h5> -->
+            <h5 class="fs-6 fs-md-5 text-wrap" [attr.title]="item.title">{{ item.title }}</h5>
 
             <div class="d-flex mt-3 flex-wrap gap-2" [ngClass]="{
                 'justify-content-center': item.hasChildren,
