@@ -12,7 +12,7 @@ import { FooterComponent } from '../../../../shared/components/footer/footer.com
 import { HeroBannerComponent } from '../../../../shared/components/hero-banner/hero-banner.component';
 
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-quran-details',
@@ -50,8 +50,10 @@ export class QuranDetailsComponent implements OnInit {
   downloading: boolean = false;
   downloadingMap: { [title: string]: boolean } = {};
   isDownloading: boolean = false;
+  audioKey: any;
 
   @HostListener('window:resize', ['$event'])
+  @ViewChild('audioPlayer') audioPlayerRef?: ElementRef<HTMLAudioElement>;
   onResize(event: any): void {
     this.isMobile = event.target.innerWidth < 768;
   }
@@ -107,26 +109,65 @@ export class QuranDetailsComponent implements OnInit {
     });
   }
   onParaChange(event: any): void {
-    const selected = this.paraLists.find(p => p.paraNumber === event.target.value);
-    if (selected) {
-      this.pdfUrl = selected.pdfUrl;
-      this.audioUrl = selected.audioUrl;
-      this.selectedPara = selected.paraNumber.toString();
-    }
+  const selected = this.paraLists.find(p => p.paraNumber === event.target.value);
+  if (selected) {
+    this.pdfUrl = selected.pdfUrl;
+    this.audioUrl = selected.audioUrl;
+    this.selectedPara = selected.paraNumber.toString();
     this.selectedSurah = '';
-    this.loadDropdownsAndLists();
+    this.audioKey++;
 
+
+    // Collapse dropdown/modal and scroll to content
+    (document.activeElement as HTMLElement)?.blur();
+    setTimeout(() => {
+      this.closeModalBackdrop();
+      this.scrollToContent();
+    }, 100);
   }
-  onSurahChange(event: any): void {
-    const selected = this.surahLists.find(s => s.surahNumber === event.target.value);
-    if (selected) {
-      this.pdfUrl = selected.pdfUrl;
-      this.audioUrl = selected.audioUrl;
-      this.selectedSurah = selected.surahNumber.toString();
-    }
+
+  this.loadDropdownsAndLists();
+}
+
+onSurahChange(event: any): void {
+  const selected = this.surahLists.find(s => s.surahNumber === event.target.value);
+  if (selected) {
+    this.pdfUrl = selected.pdfUrl;
+    this.audioUrl = selected.audioUrl;
+    this.selectedSurah = selected.surahNumber.toString();
     this.selectedPara = '';
-    this.loadDropdownsAndLists();
+    this.audioKey++;
+
+    // Collapse dropdown/modal and scroll to content
+    (document.activeElement as HTMLElement)?.blur();
+    setTimeout(() => {
+      this.closeModalBackdrop();
+      this.scrollToContent();
+    }, 100);
   }
+
+  this.loadDropdownsAndLists();
+}
+
+private closeModalBackdrop(): void {
+  const backdrop = document.querySelector('.modal-backdrop');
+  if (backdrop) {
+    backdrop.remove();
+  }
+}
+private resetAudio(): void {
+  setTimeout(() => {
+    this.audioPlayerRef?.nativeElement?.load();
+  }, 100);
+}
+private scrollToContent(): void {
+  const el = document.getElementById('contentStart');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+
 refreshPage(): void {
   this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
     this.router.navigate([this.router.url]);
