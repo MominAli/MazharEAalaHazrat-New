@@ -177,5 +177,13 @@
     "img": "assets/books/13_Tafheemul_Munazra/13_Tafheemul_Munazra.png",
     "pdfPath": "assets/books/13_Tafheemul_Munazra/13_Tafheemul_Munazra.pdf",
     "subBooks": []
+  },
+  {
+    "id": 14,
+    "title": "Barkaate Fatiha",
+    "hasChildren": false,
+    "img": "assets/books/14_Barkaate_Fatiha/14_Barkaate_Fatiha.png",
+    "pdfPath": "assets/books/14_Barkaate_Fatiha/14_Barkaate_Fatiha.pdf",
+    "subBooks": []
   }
 ]
