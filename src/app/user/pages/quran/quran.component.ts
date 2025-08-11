@@ -3,15 +3,24 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { forkJoin } from 'rxjs';
 
-import { Surah, Para, QurandetailsService } from '../../services/qurandetails.service';
+import { Surah, Para, QuranStateService } from '../../services/quran-state.service';
 import { FooterComponent } from '../../../shared/components/footer/footer.component';
 import { LoaderComponent } from '../../../shared/components/loader/loader.component';
 import { HeroBannerComponent } from '../../../shared/components/hero-banner/hero-banner.component';
 
+// src/app/models/quran-navigation-payload.ts
+
+export interface QuranNavigationPayload {
+  pdfUrl: string;
+  audioUrl: string;
+  type: 'para' | 'surah';
+  value: string | number;
+}
+
 @Component({
   selector: 'app-quran',
   standalone: true,
-  imports: [FooterComponent,HeroBannerComponent, CommonModule, LoaderComponent],
+  imports: [FooterComponent, HeroBannerComponent, CommonModule, LoaderComponent],
   templateUrl: './quran.component.html',
   styleUrl: './quran.component.css'
 })
@@ -22,8 +31,8 @@ export class QuranComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private qurandetailsService: QurandetailsService
-  ) {}
+    private quranStateService: QuranStateService
+  ) { }
 
   ngOnInit(): void {
     this.loadSurahAndParaLists();
@@ -31,10 +40,10 @@ export class QuranComponent implements OnInit {
 
   private loadSurahAndParaLists(): void {
     console.debug('📦 Fetching Surah and Para lists...');
-    
+
     forkJoin({
-      surahs: this.qurandetailsService.getSurahLists(),
-      paras: this.qurandetailsService.getParaLists()
+      surahs: this.quranStateService.getSurahLists(),
+      paras: this.quranStateService.getParaLists()
     }).subscribe({
       next: ({ surahs, paras }) => {
         this.surahLists = surahs;
@@ -51,22 +60,15 @@ export class QuranComponent implements OnInit {
     });
   }
 
-  private navigateToDetails(item: { pdfUrl: string; audioUrl: string; type: string; value: string | number }): void {
-    this.router.navigate(['/quran-details'], {
-      queryParams: {
-        pdf: item.pdfUrl,
-        audio: item.audioUrl,
-        type: item.type,
-        value: item.value
-      }
-    });
+  private navigateToDetails(item: QuranNavigationPayload): void {
+    this.quranStateService.setDetails(item);
+    this.router.navigate(['/quran-details']);
   }
-
   goToParaDetails(item: Para): void {
     this.navigateToDetails({
       pdfUrl: item.pdfUrl,
       audioUrl: item.audioUrl,
-      type: item.type,
+      type: 'para',
       value: item.paraNumber
     });
   }
@@ -75,7 +77,7 @@ export class QuranComponent implements OnInit {
     this.navigateToDetails({
       pdfUrl: item.pdfUrl,
       audioUrl: item.audioUrl,
-      type: item.type,
+      type: 'surah',
       value: item.surahNumber
     });
   }
