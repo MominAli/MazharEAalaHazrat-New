@@ -16,6 +16,8 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { LoaderComponent } from '../../../../shared/components/loader/loader.component';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { HeroBannerComponent } from '../../../../shared/components/hero-banner/hero-banner.component';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @Component({
   selector: 'app-quran-details',
@@ -28,7 +30,9 @@ import { HeroBannerComponent } from '../../../../shared/components/hero-banner/h
     NgxExtendedPdfViewerModule,
     LoaderComponent,
     FooterComponent,
-    HeroBannerComponent
+    HeroBannerComponent,
+    MatSnackBarModule
+
   ],
   templateUrl: './quran-details.component.html',
   styleUrl: './quran-details.component.css'
@@ -47,6 +51,8 @@ export class QuranDetailsComponent implements OnInit {
 
   loading: boolean = true;
   public isMobile: boolean = window.innerWidth < 768;
+  downloading: boolean = false;
+
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any): void {
@@ -56,7 +62,9 @@ export class QuranDetailsComponent implements OnInit {
   constructor(
     private qurandetailsService: QurandetailsService,
     private route: ActivatedRoute,
-    private http: HttpClient
+    private http: HttpClient,
+    private snackBar: MatSnackBar
+
   ) { }
 
   ngOnInit(): void {
@@ -117,32 +125,48 @@ export class QuranDetailsComponent implements OnInit {
     }
     this.selectedPara = '';
   }
-  download(type: 'pdf' | 'audio'): void {
-    const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
+ download(type: 'pdf' | 'audio'): void {
+  const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
 
-    if (!url) {
-      console.warn(`${type.toUpperCase()} URL is missing.`);
-      return;
-    }
-
-    let filename = 'quran-file';
-    if (this.selectedPara) {
-      filename = `para${this.selectedPara.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
-    } else if (this.selectedSurah) {
-      filename = `surah${this.selectedSurah.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
-    }
-
-    this.http.get(url, { responseType: 'blob' }).subscribe({
-      next: (blob) => this.triggerDownload(blob, filename),
-      error: (err) => console.error(`${type.toUpperCase()} download failed:`, err)
-    });
+  if (!url) {
+    console.warn(`${type.toUpperCase()} URL is missing.`);
+    this.snackBar.open(`${type.toUpperCase()} file not available.`, 'Close', { duration: 3000 });
+    return;
   }
-  private triggerDownload(blob: Blob, filename: string): void {
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = filename;
-    a.click();
-    URL.revokeObjectURL(url);
+
+  this.downloading = true;
+  const fileType = type === 'pdf' ? 'PDF' : 'Audio';
+  this.snackBar.open(`Downloading ${fileType}...`, 'Close', { duration: 3000 });
+
+  let filename = 'quran-file';
+  if (this.selectedPara) {
+    filename = `para${this.selectedPara.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
+  } else if (this.selectedSurah) {
+    filename = `surah${this.selectedSurah.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
   }
+
+  this.http.get(url, { responseType: 'blob' }).subscribe({
+    next: (blob) => {
+      this.triggerDownload(blob, filename, type === 'pdf' ? 'application/pdf' : 'audio/mpeg');
+      this.snackBar.open(`${fileType} downloaded successfully!`, 'Close', { duration: 3000 });
+      this.downloading = false;
+    },
+    error: (err) => {
+      console.error(`${fileType} download failed:`, err);
+      this.snackBar.open(`Failed to download ${fileType}.`, 'Close', { duration: 4000 });
+      this.downloading = false;
+    }
+  });
+}
+
+
+ private triggerDownload(blob: Blob, filename: string, mimeType = 'application/octet-stream'): void {
+  const url = URL.createObjectURL(new Blob([blob], { type: mimeType }));
+  const anchor = document.createElement('a');
+  anchor.href = url;
+  anchor.download = filename;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
+
 }
