@@ -23,6 +23,9 @@
   font-style: italic;
   color: var(--color-text-muted); /* #757575 */
 }
+.honorific-name{
+  color:blue;
+}
 
 
 /* ============================= */
