@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1754902504130,
+  "timestamp": 1754910243064,
   "index": "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico",
         "https://MominAli.github.io/MazharEAalaHazrat-New/index.html",
-        "https://MominAli.github.io/MazharEAalaHazrat-New/main-5R44PVGP.js",
+        "https://MominAli.github.io/MazharEAalaHazrat-New/main-KAH3EQKR.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest",
         "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js",
         "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css"
@@ -1445,8 +1445,8 @@
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.min.mjs": "a88f11b404874626e06f65d0f2ffa991c41fa3e0",
     "https://MominAli.github.io/MazharEAalaHazrat-New/assets/viewer-4.7.700.mjs": "3ec1170461caf853165d1f7bc27227e58ac867b6",
     "https://MominAli.github.io/MazharEAalaHazrat-New/favicon.ico": "9ae63671b86ed8569f384a044f706c6e736859ff",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "72af85e270c03a9269d37e1a0e58dabe404a8d50",
-    "https://MominAli.github.io/MazharEAalaHazrat-New/main-5R44PVGP.js": "05b55b64bcf8b0a3a6a4625a3d88adeb826046a0",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/index.html": "d39020d66054bce510bcf0b19c9eae92f891f26c",
+    "https://MominAli.github.io/MazharEAalaHazrat-New/main-KAH3EQKR.js": "bb8a28f32bea36b6395709ee02115c85d4f25271",
     "https://MominAli.github.io/MazharEAalaHazrat-New/manifest.webmanifest": "605dfc89b1c053da2014a31b2816dfb196e3d3bc",
     "https://MominAli.github.io/MazharEAalaHazrat-New/polyfills-S3BTP7ME.js": "893d641030c187f109c667de1b0a73a03095fa3b",
     "https://MominAli.github.io/MazharEAalaHazrat-New/styles-CFGHK3Y5.css": "52611319651f8cb1632308695f3791748bf0aeda"
