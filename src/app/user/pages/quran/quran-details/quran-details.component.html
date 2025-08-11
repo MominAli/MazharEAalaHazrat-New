@@ -206,7 +206,7 @@
 <!-- Modal Trigger Buttons -->
 
 
-<div class=" d-lg-none d-xl-none position-fixed bottom-0 start-0 px-1 bg-white py-1">
+<!-- <div class=" d-lg-none d-xl-none position-fixed bottom-0 start-0 px-1 bg-white py-1">
     <div class="bottom-btn d-flex justify-content-center align-items-center gap-3 py-3 bg-light border-top">
         <div class="text-center">
             <a class="btn btn-outline-primary px-4" data-bs-toggle="modal" data-bs-target="#downloadOption" href="#">
@@ -221,5 +221,31 @@
         </div>
     </div>
 
+</div> -->
+
+<!-- 📱 Mobile Side Buttons (Middle Left) -->
+<div class="d-lg-none d-xl-none position-fixed start-0 top-50 translate-middle-y z-3">
+  <div class="d-flex flex-column gap-2 px-1">
+    <!-- 📥 Download Button -->
+    <button
+      class="btn btn-primary square-btn shadow"
+      data-bs-toggle="modal"
+      data-bs-target="#downloadOption"
+      aria-label="Download Options">
+      <i class="fas fa-download"></i>
+    </button>
+
+    <!-- 🎧 Listen Button -->
+    <button
+      class="btn btn-primary square-btn shadow"
+      data-bs-toggle="modal"
+      data-bs-target="#listenOption"
+      aria-label="Listen Options">
+      <i class="fas fa-headphones"></i>
+    </button>
+  </div>
 </div>
+
+
+
 <app-footer></app-footer>

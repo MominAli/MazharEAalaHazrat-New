@@ -165,3 +165,21 @@
     padding: var(--spacing-padding-md) 0 !important;
   }
 }
+/* 📐 Square Button Styling */
+.square-btn {
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* 🧱 Z-index helper */
+.z-3 {
+  z-index: 1030;
+}
+
+  
