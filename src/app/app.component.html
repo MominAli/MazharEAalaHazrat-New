@@ -7,10 +7,21 @@
 <button *ngIf="showInstallButton"
         (click)="installApp()"
         class="btn"
-        style="position: fixed; top: 1rem; right: 13em; z-index: 1050;
-               background-color:blue; color:white;">
+        style="
+          position: fixed;
+          top: 1rem;
+          right: 15em;
+          height: 2.5rem;
+          z-index: 1050;
+          background-color: blue;
+          color: white;
+          font-size: 0.75rem;       /* Smaller text */
+          padding: 0.25rem 0.5rem;  /* Reduced padding */
+          border-radius: 0.25rem;   /* Optional: tighter corners */
+        ">
   Install
 </button>
+
 
 
 
