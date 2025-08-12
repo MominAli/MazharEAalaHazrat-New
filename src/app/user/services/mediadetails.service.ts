@@ -19,7 +19,9 @@ import { environment } from '../../../environments/environment';
 export class MediadetailsService {
 
   private dataUrl = environment.mediaDataPath;
-  
+    // private dataUrl = 'assets/localDB/media.json'; // Path to the JSON file
+
+
   constructor(private http: HttpClient) { }
   getMediaList(): Observable<any> {
     console.debug(`Starting media list fetch from: ${this.dataUrl}`);

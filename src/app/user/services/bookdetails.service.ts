@@ -35,6 +35,10 @@ export interface Book {
 export class BookdetailsService {
 
   private readonly dataUrl = environment.bookDataPath;
+
+    // private dataUrl = 'assets/localDB/books.json'; // Path to the JSON file
+
+
   
   constructor(private http: HttpClient) { }
 

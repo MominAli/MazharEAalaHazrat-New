@@ -64,6 +64,9 @@ export interface QuranNavigationPayload {
 export class QuranStateService {
   
   private readonly dataUrl = environment.quranDataPath;
+    // private readonly dataUrl = 'assets/localDB/quran.json';
+
+
   constructor(private http: HttpClient) { }
 
   getSurahLists(): Observable<Surah[]> {
