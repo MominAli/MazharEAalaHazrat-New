@@ -1,8 +1,17 @@
+
 <ngx-spinner type="line-scale-party">
     <h3>Loading...</h3>
 </ngx-spinner>
 
 <app-nav></app-nav>
+<button *ngIf="showInstallButton"
+        (click)="installApp()"
+        class="btn"
+        style="position: fixed; top: 1rem; right: 13em; z-index: 1050;
+               background-color:blue; color:white;">
+  Install
+</button>
+
 
 
 <div class="container-fluid px-0 pb-5"> 
