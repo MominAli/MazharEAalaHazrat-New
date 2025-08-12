@@ -10,11 +10,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-12 pb-5">
-                    <ngx-extended-pdf-viewer [src]="pdfUrl" [height]="isMobile ? '80vh' : '190vh'" [textLayer]="true"
-                        [showHandToolButton]="false" [showDownloadButton]="true" [showZoomButtons]="false"
-                        [mobileFriendlyZoom]="'true'" [zoom]="'auto'" [showFindButton]="false"
-                        [showSidebarButton]="false" [showSecondaryToolbarButton]="false">
-                    </ngx-extended-pdf-viewer>
+        <!-- Loader While PDF Renders -->
+          <app-loader [loading]="loadingPdf"></app-loader>
+
+<!-- PDF Viewer -->
+<ngx-extended-pdf-viewer
+  [src]="pdfUrl"
+  [height]="isMobile ? '80vh' : '190vh'"
+  [textLayer]="true"
+  [showHandToolButton]="false"
+  [showDownloadButton]="true"
+  [showZoomButtons]="false"
+  [mobileFriendlyZoom]="'true'"
+  [zoom]="'auto'"
+  [showFindButton]="false"
+  [showSidebarButton]="false"
+  [showSecondaryToolbarButton]="false"
+  (pageRendered)="onPageRendered()">
+</ngx-extended-pdf-viewer>
+
+
                 </div>
 
                 <div class="col-lg-4 col-md-12 d-none d-lg-block">

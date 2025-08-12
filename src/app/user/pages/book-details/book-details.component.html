@@ -1,5 +1,7 @@
+<!-- Initial Loader for Data Fetch -->
 <app-loader [loading]="loading"></app-loader>
 
+<!-- Main Content -->
 <div *ngIf="!loading">
   <app-hero-banner [title]="title" [subtitle]="'Explore, read, and download your favorite books'">
   </app-hero-banner>
@@ -8,17 +10,32 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 pb-5">
+
+          <!-- Loader While PDF Renders -->
+          <app-loader [loading]="loadingPdf"></app-loader>
+
           <!-- PDF Viewer -->
-          <ngx-extended-pdf-viewer *ngIf="pdfPath" [src]="pdfPath" [height]="isMobile ? '80vh' : '190vh'" [textLayer]="true"
-                        [showHandToolButton]="false" [showDownloadButton]="true" [showZoomButtons]="false"
-                        [mobileFriendlyZoom]="'true'" [zoom]="'auto'" [showFindButton]="false"
-                        [showSidebarButton]="false" [showSecondaryToolbarButton]="false">
-                    </ngx-extended-pdf-viewer>
+          <ngx-extended-pdf-viewer
+            *ngIf="pdfPath"
+            [src]="pdfPath"
+            [height]="isMobile ? '80vh' : '190vh'"
+            [textLayer]="true"
+            [showHandToolButton]="false"
+            [showDownloadButton]="true"
+            [showZoomButtons]="false"
+            [mobileFriendlyZoom]="'true'"
+            [zoom]="'auto'"
+            [showFindButton]="false"
+            [showSidebarButton]="false"
+            [showSecondaryToolbarButton]="false"
+            (pageRendered)="onPageRendered()">
+          </ngx-extended-pdf-viewer>
 
           <!-- Fallback Message -->
           <div *ngIf="!pdfPath" class="alert alert-warning text-center mt-5">
             ⚠️ PDF not available for this book. Please check back later or explore other titles.
           </div>
+
         </div>
       </div>
     </div>

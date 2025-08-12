@@ -52,6 +52,7 @@ export class QuranDetailsComponent implements OnInit {
   downloading: boolean = false;
   downloadingMap: { [title: string]: boolean } = {};
   isDownloading: boolean = false;
+  loadingPdf: boolean = true;
   audioKey: any;
 
   @HostListener('window:resize', ['$event'])
@@ -223,7 +224,11 @@ refreshPage(): void {
     }
   });
 }
-
+ onPageRendered(): void {
+    setTimeout(() => {
+      this.loadingPdf = false;
+    }, 300); // Smooth fade-in
+  }
 
 
   private triggerDownload(blob: Blob, filename: string): void {

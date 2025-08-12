@@ -23,16 +23,16 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
   styleUrl: './book-details.component.css'
 })
 export class BookDetailsComponent {
-  loading = true;
+  loading = true;         // Loader for initial data fetch
+  loadingPdf = true;      // Loader for PDF rendering
   pdfPath = '';
   title = 'Book Details';
+  isMobile: boolean = window.innerWidth < 768;
 
-   public isMobile: boolean = window.innerWidth < 768;
-  
-    @HostListener('window:resize', ['$event'])
-    onResize(event: any): void {
-      this.isMobile = event.target.innerWidth < 768;
-    }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any): void {
+    this.isMobile = event.target.innerWidth < 768;
+  }
 
   constructor(private route: ActivatedRoute, private bookdetailsService: BookdetailsService) {}
 
@@ -69,5 +69,10 @@ export class BookDetailsComponent {
         this.loading = false;
       }
     });
+  }
+  onPageRendered(): void {
+    setTimeout(() => {
+      this.loadingPdf = false;
+    }, 300); // Smooth fade-in
   }
 }
