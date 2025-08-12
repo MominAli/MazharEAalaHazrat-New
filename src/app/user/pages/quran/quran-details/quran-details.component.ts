@@ -230,6 +230,9 @@ refreshPage(): void {
     }, 300); // Smooth fade-in
   }
 
+modelRefreshPage(): void {
+  window.location.reload();
+}
 
   private triggerDownload(blob: Blob, filename: string): void {
     const url = URL.createObjectURL(new Blob([blob]));
