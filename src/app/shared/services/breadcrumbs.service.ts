@@ -13,7 +13,6 @@ export class BreadcrumbService {
   }
 
   buildBreadcrumbs(route: ActivatedRouteSnapshot, url: string = '', breadcrumbs: any[] = []): any[] {
-    debugger;
     const label = route.data['breadcrumb'];
     const path = route.routeConfig?.path;
     if (label && path) {

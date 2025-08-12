@@ -14,6 +14,8 @@ import { HeroBannerComponent } from '../../../../shared/components/hero-banner/h
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 import { ViewChild, ElementRef } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-quran-details',
   standalone: true,
@@ -173,54 +175,55 @@ refreshPage(): void {
     this.router.navigate([this.router.url]);
   });
 }
-  download(type: 'pdf' | 'audio'): void {
-    const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
+ download(type: 'pdf' | 'audio'): void {
+  const url = type === 'pdf' ? this.pdfUrl : this.audioUrl;
 
-    if (!url) {
-      this.snackBar.open(`${type.toUpperCase()} file not available.`, 'Close', {
-        duration: 3000,
-        panelClass: ['mat-snack-bar-error']
-      });
-      console.warn(`${type.toUpperCase()} URL is missing.`);
-      return;
-    }
-
-    let filename = 'quran-file';
-    if (this.selectedPara) {
-      filename = `para${this.selectedPara.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
-    } else if (this.selectedSurah) {
-      filename = `surah${this.selectedSurah.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
-    }
-
-    this.isDownloading = true;
-
-    this.snackBar.open(`Preparing ${type.toUpperCase()} download...`, 'Close', {
-      duration: 4000,
-      panelClass: ['mat-snack-bar-info']
+  if (!url) {
+    this.snackBar.open(`${type.toUpperCase()} file not available.`, 'Close', {
+      duration: 3000,
+      panelClass: ['mat-snack-bar-error']
     });
-
-    this.http.get(url, { responseType: 'blob' }).subscribe({
-      next: (blob) => {
-        this.triggerDownload(blob, filename);
-        this.snackBar.open(`${type.toUpperCase()} downloaded successfully.`, 'Close', {
-          duration: 3000,
-          panelClass: ['mat-snack-bar-success']
-        });
-      },
-      error: (err) => {
-        console.error(`${type.toUpperCase()} download failed:`, err);
-        this.snackBar.open(`Download failed. Check your connection.`, 'Retry', {
-          duration: 6000,
-          panelClass: ['mat-snack-bar-error']
-        }).onAction().subscribe(() => {
-          this.download(type); // Retry
-        });
-      },
-      complete: () => {
-        this.isDownloading = false;
-      }
-    });
+    console.warn(`${type.toUpperCase()} URL is missing.`);
+    return;
   }
+
+  let filename = 'quran-file';
+  if (this.selectedPara) {
+    filename = `para${this.selectedPara.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
+  } else if (this.selectedSurah) {
+    filename = `surah${this.selectedSurah.padStart(2, '0')}.${type === 'pdf' ? 'pdf' : 'mp3'}`;
+  }
+
+  this.isDownloading = true; // 🔒 Lock page
+
+  this.snackBar.open(`Preparing ${type.toUpperCase()} download...`, 'Close', {
+    duration: 4000,
+    panelClass: ['mat-snack-bar-info']
+  });
+
+  this.http.get(url, { responseType: 'blob' }).subscribe({
+    next: (blob) => {
+      this.triggerDownload(blob, filename);
+      this.snackBar.open(`${type.toUpperCase()} downloaded successfully.`, 'Close', {
+        duration: 3000,
+        panelClass: ['mat-snack-bar-success']
+      });
+    },
+    error: (err) => {
+      console.error(`${type.toUpperCase()} download failed:`, err);
+      this.snackBar.open(`Download failed. Check your connection.`, 'Retry', {
+        duration: 6000,
+        panelClass: ['mat-snack-bar-error']
+      }).onAction().subscribe(() => {
+        this.download(type); // 🔁 Retry
+      });
+    },
+    complete: () => {
+      this.isDownloading = false; // 🔓 Unlock page
+    }
+  });
+}
+
 
 
   private triggerDownload(blob: Blob, filename: string): void {

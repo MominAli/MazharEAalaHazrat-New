@@ -34,7 +34,7 @@ export class BookComponent {
 downloadingMap: { [title: string]: boolean } = {};
   books: any[] = [];
   filteredBooks: any[] = [];
-
+isDownloading: boolean = false;
 
   constructor(
     private bookdetailsService: BookdetailsService,
@@ -69,12 +69,12 @@ downloadingMap: { [title: string]: boolean } = {};
     this.currentPage = 1;
   }
 
- downloadPDF(pdfPath: string, title: string): void {
+downloadPDF(pdfPath: string, title: string): void {
+  this.isDownloading = true; // 🔒 Lock page
   this.downloadingMap[title] = true;
 
-  // Show toast: respectful and clear
   this.snackBar.open(`Preparing download for "${title}"...`, 'Close', {
-    duration: 3000,
+    duration: 5000,
     panelClass: ['mat-snack-bar-info']
   });
 
@@ -82,19 +82,20 @@ downloadingMap: { [title: string]: boolean } = {};
     next: (blob) => {
       this.triggerDownload(blob, `${title}.pdf`);
       this.snackBar.open(`"${title}" downloaded successfully.`, 'Close', {
-        duration: 3000,
+        duration: 5000,
         panelClass: ['mat-snack-bar-success']
       });
     },
     error: (err) => {
       console.error(`Download failed for "${title}":`, err);
       this.snackBar.open(`Unable to download "${title}". Please try again.`, 'Close', {
-        duration: 4000,
+        duration: 10000,
         panelClass: ['mat-snack-bar-error']
       });
     },
     complete: () => {
       this.downloadingMap[title] = false;
+      this.isDownloading = false; // 🔓 Unlock page
     }
   });
 }

@@ -211,3 +211,26 @@
   text-decoration: none;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 99999; /* Ensure it's above dialogs, headers, etc. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.download-label {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-muted, #555);
+  max-width: 90%;
+}

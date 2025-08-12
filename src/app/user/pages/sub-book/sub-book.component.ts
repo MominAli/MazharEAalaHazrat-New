@@ -34,6 +34,7 @@ export class SubBookComponent {
   parentTitle: string = 'Books Library';
   downloading: boolean = false;
 downloadingMap: { [title: string]: boolean } = {};
+isDownloading: boolean = false;
 
   constructor(
     private bookdetailsService: BookdetailsService,
@@ -44,7 +45,6 @@ downloadingMap: { [title: string]: boolean } = {};
   ) {}
 
   ngOnInit(): void {
-    debugger;
     const bookId = Number(this.route.snapshot.paramMap.get('bookId'));
 
  this.bookdetailsService.getBookList().subscribe({
@@ -71,22 +71,32 @@ downloadingMap: { [title: string]: boolean } = {};
 
   }
 downloadPDF(pdfPath: string, title: string): void {
-  this.downloading = true;
-  this.snackBar.open(`Downloading "${title}"...`, 'Close', { duration: 3000 });
+  this.isDownloading = true; // 🔒 Lock page
+  this.downloadingMap[title] = true;
+
+  this.snackBar.open(`Preparing download for "${title}"...`, 'Close', {
+    duration: 5000,
+    panelClass: ['mat-snack-bar-info']
+  });
 
   this.http.get(pdfPath, { responseType: 'blob' }).subscribe({
     next: (blob) => {
       this.triggerDownload(blob, `${title}.pdf`);
-      this.snackBar.open(`"${title}" downloaded successfully!`, 'Close', { duration: 3000 });
-      this.downloading = false;
+      this.snackBar.open(`"${title}" downloaded successfully.`, 'Close', {
+        duration: 5000,
+        panelClass: ['mat-snack-bar-success']
+      });
     },
     error: (err) => {
-      console.error('Download failed:', err);
-      this.snackBar.open(`Failed to download "${title}".`, 'Close', { duration: 4000 });
-      this.downloading = false;
+      console.error(`Download failed for "${title}":`, err);
+      this.snackBar.open(`Unable to download "${title}". Please try again.`, 'Close', {
+        duration: 10000,
+        panelClass: ['mat-snack-bar-error']
+      });
     },
-   complete: () => {
+    complete: () => {
       this.downloadingMap[title] = false;
+      this.isDownloading = false; // 🔓 Unlock page
     }
   });
 }
