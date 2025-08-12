@@ -11,6 +11,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, tap, throwError } from 'rxjs';
+import { environment } from '../../../environments/environment';
 
 export interface SubBook {
   id: number;
@@ -33,8 +34,8 @@ export interface Book {
 
 export class BookdetailsService {
 
-  private dataUrl = 'assets/localDB/books.json'; // Path to the JSON file
-
+  private readonly dataUrl = environment.bookDataPath;
+  
   constructor(private http: HttpClient) { }
 
   getBookList(): Observable<any> {

@@ -11,13 +11,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, tap, throwError } from 'rxjs';
+import { environment } from '../../../environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class MediadetailsService {
 
-  private dataUrl = 'assets/localDB/media.json'; // Path to the JSON file
-
+  private dataUrl = environment.mediaDataPath;
+  
   constructor(private http: HttpClient) { }
   getMediaList(): Observable<any> {
     console.debug(`Starting media list fetch from: ${this.dataUrl}`);

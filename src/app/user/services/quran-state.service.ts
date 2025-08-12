@@ -44,7 +44,7 @@ export interface ddlQari {
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map, Observable, of, tap, throwError } from 'rxjs';
-
+import { environment } from '../../../environments/environment';
 
 import { BehaviorSubject } from 'rxjs';
 // import { QuranNavigationPayload } from '../models/quran-navigation-payload';
@@ -62,8 +62,8 @@ export interface QuranNavigationPayload {
 
 @Injectable({ providedIn: 'root' })
 export class QuranStateService {
-  private readonly dataUrl = 'assets/localDB/quran.json';
-
+  
+  private readonly dataUrl = environment.quranDataPath;
   constructor(private http: HttpClient) { }
 
   getSurahLists(): Observable<Surah[]> {
